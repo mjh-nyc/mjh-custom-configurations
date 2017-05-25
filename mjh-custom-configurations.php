@@ -94,4 +94,15 @@ function mjh_change_post_object() {
     $labels->name_admin_bar = 'Blog &amp; Press';
 }
 add_action( 'init', 'mjh_change_post_object' );
+
+// wp-content/app example
+add_filter('acf/settings/save_json', function($path) {
+    return WPMU_PLUGIN_DIR . '/mjh-custom-configurations/acf-json';
+});
+// wp-content/app example
+add_filter('acf/settings/load_json', function($paths) {
+	unset($paths[0]);
+	$paths[] = WPMU_PLUGIN_DIR . '/mjh-custom-configurations/acf-json';
+    return $paths;
+});
 ?>
