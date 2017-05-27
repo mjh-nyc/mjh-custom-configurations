@@ -1,0 +1,144 @@
+{
+    "key": "group_5928d32ec7b9b",
+    "title": "Exhibitions Detail",
+    "fields": [
+        {
+            "key": "field_5928d3531e967",
+            "label": "Exhibition Type",
+            "name": "exhibition_type",
+            "type": "select",
+            "instructions": "Select the exhibition type",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "On View": "On View",
+                "Collection": "Collection"
+            },
+            "default_value": [
+                "On View"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5928f61df9c4e",
+            "label": "Is Ongoing",
+            "name": "is_ongoing",
+            "type": "true_false",
+            "instructions": "Is this an ongoing exhibition",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5928f64cf9c4f",
+            "label": "Exhibition Start Date",
+            "name": "exhibition_start_date",
+            "type": "date_picker",
+            "instructions": "Exhibition start date",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5928f61df9c4e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j",
+            "first_day": 0
+        },
+        {
+            "key": "field_5928f6f3f9c50",
+            "label": "Exhibition End Date",
+            "name": "exhibition_end_date",
+            "type": "date_picker",
+            "instructions": "Exhibition end date",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5928f61df9c4e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_59291901ca9ca",
+            "label": "Listing Image",
+            "name": "listing_image",
+            "type": "image",
+            "instructions": "Set an image to be used for the listing",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "exhibition"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1495865715
+}
