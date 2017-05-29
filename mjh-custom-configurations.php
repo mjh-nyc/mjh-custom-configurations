@@ -20,12 +20,13 @@ function mjh_create_post_types() {
     	'view_item' => 'View Event',
     	'search_items' => 'Search Events',
     	'not_found' =>  'No Events Found',
-    	'not_found_in_trash' => 'No Events found in Trash', 
+    	'not_found_in_trash' => 'No Events Found in Trash', 
     	'parent_item_colon' => '',
     	'menu_name' => 'Events',
     );
 	register_post_type( 'event', array(
 		'labels' => $event_labels,
+        'menu_icon' => 'dashicons-calendar-alt',
 		'has_archive' => true,
  		'public' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
@@ -48,12 +49,13 @@ function mjh_create_post_types() {
     	'view_item' => 'View Exhibition',
     	'search_items' => 'Search Exhibitions',
     	'not_found' =>  'No Exhibitions Found',
-    	'not_found_in_trash' => 'No Exhibitions found in Trash', 
+    	'not_found_in_trash' => 'No Exhibitions Found in Trash', 
     	'parent_item_colon' => '',
     	'menu_name' => 'Exhibitions',
     );
 	register_post_type( 'exhibition', array(
 		'labels' => $exhibition_labels,
+        'menu_icon' => 'dashicons-tickets-alt',
 		'has_archive' => true,
  		'public' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
@@ -88,7 +90,7 @@ function mjh_change_post_object() {
     $labels->view_item = 'View Blog &amp; Press';
     $labels->search_items = 'Search Blog &amp; Press';
     $labels->not_found = 'No Blog &amp; Press found';
-    $labels->not_found_in_trash = 'No Blog &amp; Press found in Trash';
+    $labels->not_found_in_trash = 'No Blog &amp; Press Found in Trash';
     $labels->all_items = 'All Blog &amp; Press';
     $labels->menu_name = 'Blog &amp; Press';
     $labels->name_admin_bar = 'Blog &amp; Press';
