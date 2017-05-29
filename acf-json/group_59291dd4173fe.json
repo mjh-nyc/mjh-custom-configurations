@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_59291deda8663",
-            "label": "Featured Carousel",
+            "label": "Featured carousel",
             "name": "featured_carousel_repeater",
             "type": "repeater",
-            "instructions": "For the homepage Carousel",
+            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note, that events or exhibitions with a defined end date will be automatically removed from the carousel after their end date.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -48,10 +48,10 @@
         },
         {
             "key": "field_59291ea494c73",
-            "label": "Location Deck",
-            "name": "location_deck_repeater",
+            "label": "Plan your visit card deck",
+            "name": "plan_deck_repeater",
             "type": "repeater",
-            "instructions": "Homepage location deck",
+            "instructions": "Add custom cards to the “Plan your visit” section of the homepage. These can be location in context cards, accepted passes, promotions and featured partner information.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -67,8 +67,8 @@
             "sub_fields": [
                 {
                     "key": "field_59291ec794c74",
-                    "label": "Location Image",
-                    "name": "location_image",
+                    "label": "Card image",
+                    "name": "card_image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -78,7 +78,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
+                    "return_format": "array",
                     "preview_size": "thumbnail",
                     "library": "all",
                     "min_width": "",
@@ -91,8 +91,8 @@
                 },
                 {
                     "key": "field_59291ef594c75",
-                    "label": "Location Caption",
-                    "name": "location_caption",
+                    "label": "Card caption",
+                    "name": "card_caption",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -110,10 +110,10 @@
                 },
                 {
                     "key": "field_5929209b94c76",
-                    "label": "Location Directions",
-                    "name": "location_directions",
+                    "label": "Card URL",
+                    "name": "card_url",
                     "type": "url",
-                    "instructions": "Link for directions",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -144,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495869305
+    "modified": 1495993254
 }

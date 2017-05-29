@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_5928f811994f0",
-            "label": "Image Slideshow",
+            "label": "Image slideshow",
             "name": "image_slideshow_repeater",
             "type": "repeater",
-            "instructions": "Use this image gallery to be embedded into the body of the page",
+            "instructions": "Use this image gallery to add images be embedded into the body of the page",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -47,7 +47,7 @@
                 },
                 {
                     "key": "field_5928f859994f2",
-                    "label": "Image Caption",
+                    "label": "Image caption",
                     "name": "image_caption",
                     "type": "text",
                     "instructions": "",
@@ -76,13 +76,15 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 10,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "custom_fields"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1495869206
+    "modified": 1495994590
 }

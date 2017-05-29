@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5928dacd0b5dc",
-            "label": "Primary Sponsors",
+            "label": "Primary sponsors",
             "name": "primary_sponsors_repeater",
             "type": "repeater",
             "instructions": "List of the primary sponsors",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5928dcc10b5dd",
-                    "label": "Sponsor Name",
+                    "label": "Sponsor name",
                     "name": "sponsor_name",
                     "type": "text",
                     "instructions": "",
@@ -42,7 +42,7 @@
                 },
                 {
                     "key": "field_5928dce70b5de",
-                    "label": "Sponsor Image",
+                    "label": "Sponsor image\/logo",
                     "name": "sponsor_image",
                     "type": "image",
                     "instructions": "",
@@ -63,12 +63,28 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_592b0cd770444",
+                    "label": "Sponsor URL",
+                    "name": "sponsor_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         },
         {
             "key": "field_5928df59ce617",
-            "label": "Secondary Sponsors",
+            "label": "Secondary sponsors",
             "name": "secondary_sponsors_repeater",
             "type": "repeater",
             "instructions": "List of the secondary sponsors",
@@ -87,7 +103,7 @@
             "sub_fields": [
                 {
                     "key": "field_5928e0988ac40",
-                    "label": "Sponsor Name",
+                    "label": "Sponsor name",
                     "name": "sponsor_name",
                     "type": "text",
                     "instructions": "",
@@ -106,7 +122,7 @@
                 },
                 {
                     "key": "field_5928e0b28ac41",
-                    "label": "Sponsor Image",
+                    "label": "Sponsor image\/logo",
                     "name": "sponsor_image",
                     "type": "image",
                     "instructions": "",
@@ -127,6 +143,22 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_592b0d1970445",
+                    "label": "Sponsor URL",
+                    "name": "sponsor_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -147,7 +179,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 22,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -155,5 +187,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495869414
+    "modified": 1495993649
 }
