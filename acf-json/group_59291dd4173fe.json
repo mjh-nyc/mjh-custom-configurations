@@ -22,6 +22,25 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_592e2b5bb1e00",
+                    "label": "Header",
+                    "name": "carousel_item_header",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Now on View",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_59291e3fa8664",
                     "label": "Carousel item",
                     "name": "carousel_item",
@@ -41,7 +60,7 @@
                     "taxonomy": [],
                     "allow_null": 0,
                     "multiple": 0,
-                    "return_format": "object",
+                    "return_format": "id",
                     "ui": 1
                 }
             ]
@@ -123,6 +142,25 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_593018cf6bfc1",
+                    "label": "Card URL Label",
+                    "name": "card_url_label",
+                    "type": "text",
+                    "instructions": "Label for the button that links the URL",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -144,5 +182,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495993254
+    "modified": 1496324439
 }

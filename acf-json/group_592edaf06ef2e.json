@@ -107,8 +107,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "g:i a",
-                    "return_format": "g:i a"
+                    "display_format": "g:i A",
+                    "return_format": "g:i A"
                 },
                 {
                     "key": "field_592ee32e4f310",
@@ -131,8 +131,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "g:i a",
-                    "return_format": "g:i a"
+                    "display_format": "g:i A",
+                    "return_format": "g:i A"
                 },
                 {
                     "key": "field_592ee4a3c5707",
@@ -284,8 +284,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "g:i a",
-                    "return_format": "g:i a"
+                    "display_format": "g:i A",
+                    "return_format": "g:i A"
                 },
                 {
                     "key": "field_592ef1b1f2455",
@@ -308,10 +308,42 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "g:i a",
-                    "return_format": "g:i a"
+                    "display_format": "g:i A",
+                    "return_format": "g:i A"
                 }
             ]
+        },
+        {
+            "key": "field_593011b2f8e36",
+            "label": "Holiday Eve Opening Hour",
+            "name": "holiday_eve_opening_hour",
+            "type": "time_picker",
+            "instructions": "Please choose the opening hour of the museum on the eve of a holiday",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i A",
+            "return_format": "g:i A"
+        },
+        {
+            "key": "field_59301207f8e37",
+            "label": "Holiday Eve Closing Hour",
+            "name": "holiday_eve_closing_hour",
+            "type": "time_picker",
+            "instructions": "Please choose the closing hour of the museum on the eve of a holiday",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i A",
+            "return_format": "g:i A"
         },
         {
             "key": "field_592ef74010bf3",
@@ -515,5 +547,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496256183
+    "modified": 1496323070
 }
