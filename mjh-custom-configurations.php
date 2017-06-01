@@ -30,13 +30,12 @@ function mjh_create_post_types() {
 		'has_archive' => true,
  		'public' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
-		'taxonomies' => array( 'post_tag', 'category' ),	
 		'exclude_from_search' => false,
 		'capability_type' => 'post',
 		'rewrite' => array( 'slug' => 'events' ),
 		)
 	);
-	
+	register_event_category();
     // Register exhibition
 	$exhibition_labels = array(
  		'name' => 'Exhibitions',
@@ -59,14 +58,70 @@ function mjh_create_post_types() {
 		'has_archive' => true,
  		'public' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
-		'taxonomies' => array( 'post_tag', 'category' ),	
 		'exclude_from_search' => false,
 		'capability_type' => 'post',
 		'rewrite' => array( 'slug' => 'exhibitions' ),
 		)
 	);
+	register_exhibition_category();
 }
 add_action( 'init', 'mjh_create_post_types' );
+
+function register_event_category(){
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Event Categories', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Event Category', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Event Categories', 'textdomain' ),
+		'all_items'         => __( 'All Event Categories', 'textdomain' ),
+		'parent_item'       => __( 'Parent Event Category', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Event Category:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Event Category', 'textdomain' ),
+		'update_item'       => __( 'Update Event Category', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Event Category', 'textdomain' ),
+		'new_item_name'     => __( 'New Event Category Name', 'textdomain' ),
+		'menu_name'         => __( 'Event Category', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'event-category' ),
+	);
+
+	register_taxonomy( 'event_category', array( 'event' ), $args );
+}
+
+function register_exhibition_category(){
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Exhibition Categories', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Exhibition Category', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Exhibition Categories', 'textdomain' ),
+		'all_items'         => __( 'All Exhibition Categories', 'textdomain' ),
+		'parent_item'       => __( 'Parent Exhibition Category', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Exhibition Category:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Exhibition Category', 'textdomain' ),
+		'update_item'       => __( 'Update Exhibition Category', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Exhibition Category', 'textdomain' ),
+		'new_item_name'     => __( 'New Exhibition Category Name', 'textdomain' ),
+		'menu_name'         => __( 'Exhibition Category', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'exhibition-category' ),
+	);
+
+	register_taxonomy( 'exhibition_category', array( 'exhibition' ), $args );
+}
 
 // Change label of post to Blog & Press
 function mjh_change_post_label() {
