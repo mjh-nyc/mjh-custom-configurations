@@ -1,13 +1,13 @@
 {
     "key": "group_5928d32ec7b9b",
-    "title": "Exhibitions Detail",
+    "title": "Exhibition Details",
     "fields": [
         {
             "key": "field_5928d3531e967",
-            "label": "Exhibition Type",
+            "label": "Exhibition type",
             "name": "exhibition_type",
             "type": "select",
-            "instructions": "Select the exhibition type",
+            "instructions": "Select the exhibition type. “On view” exhibitions have a start and end dates while the “Ongoing” exhibitions do not.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -30,42 +30,23 @@
             "placeholder": ""
         },
         {
-            "key": "field_5928f61df9c4e",
-            "label": "Is Ongoing",
-            "name": "is_ongoing",
-            "type": "true_false",
-            "instructions": "Is this an ongoing exhibition",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_5928f64cf9c4f",
-            "label": "Exhibition Start Date",
+            "label": "Exhibition start date",
             "name": "exhibition_start_date",
             "type": "date_picker",
-            "instructions": "Exhibition start date",
+            "instructions": "",
             "required": 0,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_5928f61df9c4e",
-                        "operator": "!=",
-                        "value": "1"
+                        "field": "field_5928d3531e967",
+                        "operator": "==",
+                        "value": "On View"
                     }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -75,22 +56,22 @@
         },
         {
             "key": "field_5928f6f3f9c50",
-            "label": "Exhibition End Date",
+            "label": "Exhibition end date",
             "name": "exhibition_end_date",
             "type": "date_picker",
-            "instructions": "Exhibition end date",
+            "instructions": "",
             "required": 0,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_5928f61df9c4e",
-                        "operator": "!=",
-                        "value": "1"
+                        "field": "field_5928d3531e967",
+                        "operator": "==",
+                        "value": "On View"
                     }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -100,10 +81,10 @@
         },
         {
             "key": "field_59291901ca9ca",
-            "label": "Listing Image",
-            "name": "listing_image",
+            "label": "Hero image",
+            "name": "hero_image",
             "type": "image",
-            "instructions": "Set an image to be used for the listing",
+            "instructions": "Set an image to be used as a hero for this exhibition. This image will be used as a background on homepage when the exhibition card is in focus. Please upload a high resolution image that’s been optimized for the web. Minimum dimensions are 1600px wide by 800px high.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -112,15 +93,15 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "thumbnail",
+            "preview_size": "medium",
             "library": "all",
-            "min_width": "",
-            "min_height": "",
+            "min_width": 1600,
+            "min_height": 800,
             "min_size": "",
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "jpg,png,gif"
         }
     ],
     "location": [
@@ -132,13 +113,18 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 20,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "custom_fields",
+        "discussion",
+        "comments",
+        "categories"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1495865715
+    "modified": 1495998523
 }
