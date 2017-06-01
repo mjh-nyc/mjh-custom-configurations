@@ -92,6 +92,13 @@
                 "operator": "==",
                 "value": "post"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "exhibition"
+            }
         ]
     ],
     "menu_order": 13,
@@ -104,5 +111,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496105768
+    "modified": 1496345932
 }
