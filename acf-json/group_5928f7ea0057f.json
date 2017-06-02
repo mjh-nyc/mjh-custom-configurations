@@ -42,6 +42,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 10,
@@ -54,5 +61,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496102294
+    "modified": 1496376887
 }
