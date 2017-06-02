@@ -1,11 +1,66 @@
 {
     "key": "group_5930823bbb761",
-    "title": "Event Detail",
+    "title": "Event Details",
     "fields": [
         {
             "key": "field_593094fd5dfda",
-            "label": "Event Dates",
+            "label": "Event dates",
             "name": "event_dates",
+            "type": "repeater",
+            "instructions": "Select a start and an end date to set a date range for this event, if this is a single day event, please enter the same date in both start and end fields.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5930950a5dfdb",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add date(s)",
+            "sub_fields": [
+                {
+                    "key": "field_5930950a5dfdb",
+                    "label": "Start date & time",
+                    "name": "event_start_date",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "l, F j, Y g:i a",
+                    "return_format": "l, F j, Y g:i a",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_593095baddabe",
+                    "label": "End date & time",
+                    "name": "event_end_date",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "l, F j, Y g:i a",
+                    "return_format": "l, F j, Y g:i a",
+                    "first_day": 1
+                }
+            ]
+        },
+        {
+            "key": "field_59308d698eaba",
+            "label": "Event pricing",
+            "name": "event_pricing",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -15,56 +70,105 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_59308da68eabc",
             "min": 0,
             "max": 0,
-            "layout": "row",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add price",
             "sub_fields": [
                 {
-                    "key": "field_5930950a5dfdb",
-                    "label": "Event Start Date",
-                    "name": "event_start_date",
-                    "type": "date_time_picker",
+                    "key": "field_59308da68eabc",
+                    "label": "Event price label",
+                    "name": "event_price_label",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "l, F j, Y g:i a",
-                    "return_format": "l, F j, Y g:i a",
-                    "first_day": 0
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
-                    "key": "field_593095baddabe",
-                    "label": "Event End Date",
-                    "name": "event_end_date",
-                    "type": "date_time_picker",
-                    "instructions": "Select an end date to set a date range for this event",
+                    "key": "field_59308d828eabb",
+                    "label": "Event price",
+                    "name": "event_price",
+                    "type": "number",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "l, F j, Y g:i a",
-                    "return_format": "l, F j, Y g:i a",
-                    "first_day": 0
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "$",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
                 }
             ]
         },
         {
+            "key": "field_5930965396353",
+            "label": "Event ticket URL",
+            "name": "event_ticket_url",
+            "type": "url",
+            "instructions": "URL for the ticket purchasing application for this event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_593190acc1942",
+            "label": "Does this event have a specific location?",
+            "name": "event_has_location",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes, I want to enter a specific location for this event",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5930a1b7ff982",
-            "label": "Event Location",
+            "label": "Event location",
             "name": "event_location",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -78,12 +182,20 @@
         },
         {
             "key": "field_593082468eab5",
-            "label": "Event Street",
+            "label": "Event street",
             "name": "event_street",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -97,12 +209,20 @@
         },
         {
             "key": "field_593087d68eab6",
-            "label": "Event Secondary Street",
+            "label": "Event secondary street",
             "name": "event_secondary_street",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -116,18 +236,26 @@
         },
         {
             "key": "field_59308d048eab7",
-            "label": "Event City",
+            "label": "Event city",
             "name": "event_city",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "New York",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -135,18 +263,26 @@
         },
         {
             "key": "field_59308d3c8eab8",
-            "label": "Event State",
+            "label": "Event state",
             "name": "event_state",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "NY",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -154,99 +290,30 @@
         },
         {
             "key": "field_59308d5a8eab9",
-            "label": "Event Zip Code",
+            "label": "Event zip code",
             "name": "event_zip_code",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593190acc1942",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": 10280,
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_59308d698eaba",
-            "label": "Event Pricing",
-            "name": "event_pricing",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "row",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_59308d828eabb",
-                    "label": "Event Price",
-                    "name": "event_price",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "min": "",
-                    "max": "",
-                    "step": ""
-                },
-                {
-                    "key": "field_59308da68eabc",
-                    "label": "Event Price Label",
-                    "name": "event_price_label",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
-        },
-        {
-            "key": "field_5930965396353",
-            "label": "Event Ticket URL",
-            "name": "event_ticket_url",
-            "type": "url",
-            "instructions": "URL of ticket purchasing application for this event",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
         }
     ],
     "location": [
@@ -258,13 +325,15 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 23,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "custom_fields"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1496359371
+    "modified": 1496421119
 }

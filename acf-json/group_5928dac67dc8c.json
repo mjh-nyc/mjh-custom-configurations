@@ -3,6 +3,47 @@
     "title": "Sponsors",
     "fields": [
         {
+            "key": "field_5931bf460f2cb",
+            "label": "Primary sponsors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5931bfce50dd1",
+            "label": "Header",
+            "name": "primary_sponsor_header",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Sponsored by": "Sponsored by",
+                "Presented by": "Presented by"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
             "key": "field_5928dacd0b5dc",
             "label": "Primary sponsors",
             "name": "primary_sponsors_repeater",
@@ -15,11 +56,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5928dcc10b5dd",
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "",
+            "button_label": "Add sponsor",
             "sub_fields": [
                 {
                     "key": "field_5928dcc10b5dd",
@@ -27,7 +68,7 @@
                     "name": "sponsor_name",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -39,30 +80,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_5928dce70b5de",
-                    "label": "Sponsor image\/logo",
-                    "name": "sponsor_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
                 },
                 {
                     "key": "field_592b0cd770444",
@@ -79,8 +96,74 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5928dce70b5de",
+                    "label": "Sponsor image\/logo",
+                    "name": "sponsor_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_5931bf826a8ab",
+            "label": "Secondary sponsors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5931c009214ee",
+            "label": "Header",
+            "name": "secondary_sponsor_header",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Co-presented by": "Co-presented by",
+                "Co-sponsored by": "Co-sponsored by",
+                "Special thanks to": "Special thanks to"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
         },
         {
             "key": "field_5928df59ce617",
@@ -95,11 +178,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_5928e0988ac40",
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "",
+            "button_label": "Add sponsor",
             "sub_fields": [
                 {
                     "key": "field_5928e0988ac40",
@@ -184,8 +267,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "custom_fields"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1495993649
+    "modified": 1496433457
 }
