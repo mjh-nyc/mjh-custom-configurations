@@ -1,6 +1,6 @@
 {
     "key": "group_592edaf06ef2e",
-    "title": "Museum Options",
+    "title": "Museum Information",
     "fields": [
         {
             "key": "field_592f0e41fd49f",
@@ -20,10 +20,10 @@
         },
         {
             "key": "field_592edb004f30d",
-            "label": "Regular Hours",
+            "label": "Regular hours",
             "name": "regular_hours_repeater",
             "type": "repeater",
-            "instructions": "Manage regular hours schedule",
+            "instructions": "Manage museum’s opening hours",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -31,22 +31,22 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_592edce24f30e",
             "min": 0,
             "max": 0,
-            "layout": "row",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add day schedule",
             "sub_fields": [
                 {
                     "key": "field_592edce24f30e",
-                    "label": "Day of Week",
+                    "label": "Day",
                     "name": "day_of_week",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -69,14 +69,14 @@
                 },
                 {
                     "key": "field_592ee34d4f311",
-                    "label": "Is museum closed",
+                    "label": "Museum is closed",
                     "name": "is_museum_closed",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -103,7 +103,7 @@
                         ]
                     ],
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -112,7 +112,7 @@
                 },
                 {
                     "key": "field_592ee32e4f310",
-                    "label": "Closing Hour",
+                    "label": "Closing hour",
                     "name": "closing_hour",
                     "type": "time_picker",
                     "instructions": "",
@@ -127,7 +127,7 @@
                         ]
                     ],
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -136,14 +136,14 @@
                 },
                 {
                     "key": "field_592ee4a3c5707",
-                    "label": "Hours Start Date Range",
+                    "label": "Hours variation start date",
                     "name": "hours_start_date_range",
                     "type": "date_picker",
-                    "instructions": "If hours for this day varies by a date range, please add a start date for these should be applied",
+                    "instructions": "If hours for this day vary during a specific period, please add a start date for this variation",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -153,14 +153,14 @@
                 },
                 {
                     "key": "field_592eeccdc5708",
-                    "label": "Hours End Date Range",
+                    "label": "Hours variation end date",
                     "name": "hours_end_date_range",
                     "type": "date_picker",
-                    "instructions": "If hours for this day varies by a date range, please add a end date for these should be applied",
+                    "instructions": "If hours for this day vary during a specific period, please add an end date for this variation",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -172,10 +172,10 @@
         },
         {
             "key": "field_592ef3af8f165",
-            "label": "Regular Hours Additional Notes",
+            "label": "Regular hours additional notes",
             "name": "regular_hours_additional_notes",
             "type": "textarea",
-            "instructions": "Add any additional notes about regular hours.",
+            "instructions": "Add any additional notes about regular hours",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -191,7 +191,7 @@
         },
         {
             "key": "field_592ef0d5f2450",
-            "label": "Holiday Hours",
+            "label": "Holiday hours",
             "name": "holiday_hours_repeater",
             "type": "repeater",
             "instructions": "Manage holiday schedule",
@@ -205,19 +205,19 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "row",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add holiday",
             "sub_fields": [
                 {
                     "key": "field_592ef111f2451",
-                    "label": "Holiday Name",
+                    "label": "Holiday name",
                     "name": "holiday_name",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -229,20 +229,20 @@
                 },
                 {
                     "key": "field_592ef126f2452",
-                    "label": "Holiday Date",
+                    "label": "Holiday date",
                     "name": "holiday_date",
                     "type": "date_picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
-                    "first_day": 0
+                    "first_day": 1
                 },
                 {
                     "key": "field_592ef158f2453",
@@ -253,7 +253,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -265,7 +265,7 @@
                 },
                 {
                     "key": "field_592ef18ff2454",
-                    "label": "Opening Hour",
+                    "label": "Opening hour",
                     "name": "opening_hour",
                     "type": "time_picker",
                     "instructions": "",
@@ -280,7 +280,7 @@
                         ]
                     ],
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -289,7 +289,7 @@
                 },
                 {
                     "key": "field_592ef1b1f2455",
-                    "label": "Closing Hour",
+                    "label": "Closing hour",
                     "name": "closing_hour",
                     "type": "time_picker",
                     "instructions": "",
@@ -304,7 +304,7 @@
                         ]
                     ],
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -315,14 +315,14 @@
         },
         {
             "key": "field_593011b2f8e36",
-            "label": "Holiday Eve Opening Hour",
+            "label": "Holiday eve opening hour",
             "name": "holiday_eve_opening_hour",
             "type": "time_picker",
-            "instructions": "Please choose the opening hour of the museum on the eve of a holiday",
+            "instructions": "Please choose the opening hour on the eve of a holiday",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -331,14 +331,14 @@
         },
         {
             "key": "field_59301207f8e37",
-            "label": "Holiday Eve Closing Hour",
+            "label": "Holiday eve closing hour",
             "name": "holiday_eve_closing_hour",
             "type": "time_picker",
-            "instructions": "Please choose the closing hour of the museum on the eve of a holiday",
+            "instructions": "Please choose the closing hour on the eve of a holiday",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -347,10 +347,10 @@
         },
         {
             "key": "field_592ef74010bf3",
-            "label": "Holiday Additional Notes",
+            "label": "Holiday additional notes",
             "name": "holiday_additional_notes",
             "type": "textarea",
-            "instructions": "Add any additional notes about holiday hours.",
+            "instructions": "Add any additional notes about holiday hours",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -361,12 +361,12 @@
             "default_value": "",
             "placeholder": "",
             "maxlength": "",
-            "rows": "",
+            "rows": 4,
             "new_lines": "wpautop"
         },
         {
             "key": "field_592f0e9751018",
-            "label": "Annoucements",
+            "label": "Announcements",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -397,7 +397,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "wpautop"
+            "new_lines": ""
         },
         {
             "key": "field_592f0db3f1c73",
@@ -417,11 +417,11 @@
         },
         {
             "key": "field_592f0a52483bc",
-            "label": "Street Address",
+            "label": "Street address",
             "name": "street_address",
             "type": "text",
-            "instructions": "Museum's street address",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -436,11 +436,11 @@
         },
         {
             "key": "field_592f0c3460e7c",
-            "label": "Secondary Street",
+            "label": "Secondary street",
             "name": "secondary_street_address",
             "type": "text",
-            "instructions": "Museum's secondary street address",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -458,11 +458,11 @@
             "label": "City",
             "name": "city_address",
             "type": "text",
-            "instructions": "Museum's city",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -477,11 +477,11 @@
             "label": "State",
             "name": "state_address",
             "type": "text",
-            "instructions": "Museum's state",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -493,14 +493,14 @@
         },
         {
             "key": "field_592f0bbc60e7b",
-            "label": "Zip Code",
+            "label": "Zip code",
             "name": "zip_code_address",
             "type": "text",
-            "instructions": "Museum's zip code",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -512,10 +512,10 @@
         },
         {
             "key": "field_592f0cf489b86",
-            "label": "Phone Number",
+            "label": "Phone number",
             "name": "phone_number",
             "type": "text",
-            "instructions": "Museum's phone number",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -523,7 +523,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "(646) 437-4202",
+            "default_value": "(646) 437–4202",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -539,7 +539,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 50,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -547,5 +547,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496323070
+    "modified": 1496338141
 }

@@ -70,17 +70,17 @@ add_action( 'init', 'mjh_create_post_types' );
 function register_event_category(){
 	// Add new taxonomy, make it hierarchical (like categories)
 	$labels = array(
-		'name'              => _x( 'Event Categories', 'taxonomy general name', 'textdomain' ),
-		'singular_name'     => _x( 'Event Category', 'taxonomy singular name', 'textdomain' ),
-		'search_items'      => __( 'Search Event Categories', 'textdomain' ),
-		'all_items'         => __( 'All Event Categories', 'textdomain' ),
-		'parent_item'       => __( 'Parent Event Category', 'textdomain' ),
-		'parent_item_colon' => __( 'Parent Event Category:', 'textdomain' ),
-		'edit_item'         => __( 'Edit Event Category', 'textdomain' ),
-		'update_item'       => __( 'Update Event Category', 'textdomain' ),
-		'add_new_item'      => __( 'Add New Event Category', 'textdomain' ),
-		'new_item_name'     => __( 'New Event Category Name', 'textdomain' ),
-		'menu_name'         => __( 'Event Category', 'textdomain' ),
+		'name'              => _x( 'Event Categories', 'taxonomy general name', 'sage' ),
+		'singular_name'     => _x( 'Event Category', 'taxonomy singular name', 'sage' ),
+		'search_items'      => __( 'Search Event Categories', 'sage' ),
+		'all_items'         => __( 'All Event Categories', 'sage' ),
+		'parent_item'       => __( 'Parent Event Category', 'sage' ),
+		'parent_item_colon' => __( 'Parent Event Category:', 'sage' ),
+		'edit_item'         => __( 'Edit Event Category', 'sage' ),
+		'update_item'       => __( 'Update Event Category', 'sage' ),
+		'add_new_item'      => __( 'Add New Event Category', 'sage' ),
+		'new_item_name'     => __( 'New Event Category Name', 'sage' ),
+		'menu_name'         => __( 'Event Category', 'sage' ),
 	);
 
 	$args = array(
@@ -98,17 +98,17 @@ function register_event_category(){
 function register_exhibition_category(){
 	// Add new taxonomy, make it hierarchical (like categories)
 	$labels = array(
-		'name'              => _x( 'Exhibition Categories', 'taxonomy general name', 'textdomain' ),
-		'singular_name'     => _x( 'Exhibition Category', 'taxonomy singular name', 'textdomain' ),
-		'search_items'      => __( 'Search Exhibition Categories', 'textdomain' ),
-		'all_items'         => __( 'All Exhibition Categories', 'textdomain' ),
-		'parent_item'       => __( 'Parent Exhibition Category', 'textdomain' ),
-		'parent_item_colon' => __( 'Parent Exhibition Category:', 'textdomain' ),
-		'edit_item'         => __( 'Edit Exhibition Category', 'textdomain' ),
-		'update_item'       => __( 'Update Exhibition Category', 'textdomain' ),
-		'add_new_item'      => __( 'Add New Exhibition Category', 'textdomain' ),
-		'new_item_name'     => __( 'New Exhibition Category Name', 'textdomain' ),
-		'menu_name'         => __( 'Exhibition Category', 'textdomain' ),
+		'name'              => _x( 'Exhibition Categories', 'taxonomy general name', 'sage' ),
+		'singular_name'     => _x( 'Exhibition Category', 'taxonomy singular name', 'sage' ),
+		'search_items'      => __( 'Search Exhibition Categories', 'sage' ),
+		'all_items'         => __( 'All Exhibition Categories', 'sage' ),
+		'parent_item'       => __( 'Parent Exhibition Category', 'sage' ),
+		'parent_item_colon' => __( 'Parent Exhibition Category:', 'sage' ),
+		'edit_item'         => __( 'Edit Exhibition Category', 'sage' ),
+		'update_item'       => __( 'Update Exhibition Category', 'sage' ),
+		'add_new_item'      => __( 'Add New Exhibition Category', 'sage' ),
+		'new_item_name'     => __( 'New Exhibition Category Name', 'sage' ),
+		'menu_name'         => __( 'Exhibition Category', 'sage' ),
 	);
 
 	$args = array(
