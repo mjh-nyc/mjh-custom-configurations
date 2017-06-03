@@ -95,6 +95,25 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_5932f6bdca276",
+            "label": "Site description",
+            "name": "site_description",
+            "type": "textarea",
+            "instructions": "Enter the site description. It will be used for generic meta tags on homepage and on pages and posts where unique excerpts have not been created. Max length is 160 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 160,
+            "rows": 4,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -114,5 +133,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495993361
+    "modified": 1496512252
 }
