@@ -11,7 +11,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "75",
                 "class": "",
                 "id": ""
             },
@@ -28,6 +28,25 @@
             "ajax": 0,
             "return_format": "value",
             "placeholder": ""
+        },
+        {
+            "key": "field_593356d8e9595",
+            "label": "Does this exhibition require a ticket?",
+            "name": "exhibition_admission_required",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         },
         {
             "key": "field_5928f64cf9c4f",
@@ -126,5 +145,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1495998523
+    "modified": 1496536962
 }
