@@ -34,8 +34,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "l, F j, Y g:i a",
-                    "return_format": "l, F j, Y g:i a",
+                    "display_format": "D, M j, Y g:i a",
+                    "return_format": "D, M j, Y g:i a",
                     "first_day": 1
                 },
                 {
@@ -51,8 +51,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "l, F j, Y g:i a",
-                    "return_format": "l, F j, Y g:i a",
+                    "display_format": "D, M j, Y g:i a",
+                    "return_format": "D, M j, Y g:i a",
                     "first_day": 1
                 }
             ]
@@ -335,5 +335,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496421119
+    "modified": 1496673581
 }
