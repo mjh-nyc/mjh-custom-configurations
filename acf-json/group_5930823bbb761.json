@@ -174,7 +174,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Museum of Jewish Heritage — A Living Memorial to the Holocaust",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -201,7 +201,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Edmond J. Safra Plaza",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -228,7 +228,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "36 Battery Place",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -335,5 +335,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496421119
+    "modified": 1496620661
 }
