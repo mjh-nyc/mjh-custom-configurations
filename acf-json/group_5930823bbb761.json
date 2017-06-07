@@ -3,11 +3,11 @@
     "title": "Event Details",
     "fields": [
         {
-            "key": "field_593094fd5dfda",
-            "label": "Event dates",
-            "name": "event_dates",
-            "type": "repeater",
-            "instructions": "Select a start and an end date to set a date range for this event, if this is a single day event, please enter the same date in both start and end fields.",
+            "key": "field_593874053bc87",
+            "label": "Is this a one-time event?",
+            "name": "one_off_bool",
+            "type": "true_false",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,47 +15,93 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5930950a5dfdb",
-            "min": 0,
-            "max": 0,
-            "layout": "block",
-            "button_label": "Add date(s)",
-            "sub_fields": [
-                {
-                    "key": "field_5930950a5dfdb",
-                    "label": "Start date & time",
-                    "name": "event_start_date",
-                    "type": "date_time_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "D, M j, Y g:i a",
-                    "return_format": "D, M j, Y g:i a",
-                    "first_day": 1
-                },
-                {
-                    "key": "field_593095baddabe",
-                    "label": "End date & time",
-                    "name": "event_end_date",
-                    "type": "date_time_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "D, M j, Y g:i a",
-                    "return_format": "D, M j, Y g:i a",
-                    "first_day": 1
-                }
-            ]
+            "message": "Yes, this is a one-time event",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5930950a5dfdb",
+            "label": "Event start date",
+            "name": "event_start_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_593095baddabe",
+            "label": "Event end date",
+            "name": "event_end_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_593874563bc88",
+            "label": "Event start time",
+            "name": "event_start_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593874053bc87",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i A",
+            "return_format": "g:i A"
+        },
+        {
+            "key": "field_593874ae3bc89",
+            "label": "Event end time",
+            "name": "event_end_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593874053bc87",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i A",
+            "return_format": "g:i A"
         },
         {
             "key": "field_59308d698eaba",
@@ -335,5 +381,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496673581
+    "modified": 1496872324
 }

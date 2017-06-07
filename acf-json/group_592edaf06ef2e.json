@@ -23,7 +23,7 @@
             "label": "Regular hours",
             "name": "regular_hours_repeater",
             "type": "repeater",
-            "instructions": "Manage museum’s opening hours",
+            "instructions": "Manage museum’s opening hours. Please enter exceptions to regular day schedule as their own days. Be sure to place the exception days <strong>above<\/strong> the regular day schedule. It will be pulled out into an alert message window on the hours page. Use the shortcode <strong>[hours]<\/strong> within your pages and posts to display these hours.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -175,7 +175,7 @@
             "label": "Regular hours additional notes",
             "name": "regular_hours_additional_notes",
             "type": "textarea",
-            "instructions": "Add any additional notes about regular hours",
+            "instructions": "Add any additional notes about regular hours. Use shortcode <strong>[hours-notes]<\/strong> to display these notes within you pages and posts.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -187,14 +187,14 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "wpautop"
+            "new_lines": ""
         },
         {
             "key": "field_592ef0d5f2450",
             "label": "Holiday hours",
             "name": "holiday_hours_repeater",
             "type": "repeater",
-            "instructions": "Manage holiday schedule",
+            "instructions": "Manage holiday schedule. Use the shortcode <strong>[holidays]<\/strong> within your pages and posts to display these hours.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -350,7 +350,7 @@
             "label": "Holiday additional notes",
             "name": "holiday_additional_notes",
             "type": "textarea",
-            "instructions": "Add any additional notes about holiday hours",
+            "instructions": "Add any additional notes about holiday hours. Use shortcode <strong>[holiday-notes]<\/strong> to display these notes within you pages and posts.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -362,7 +362,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 4,
-            "new_lines": "wpautop"
+            "new_lines": ""
         },
         {
             "key": "field_592f0e9751018",
@@ -414,6 +414,23 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_5938696a32d71",
+            "label": "Contact information notes",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use the shortcode <strong>[address]<\/strong> within your pages and posts to display the address and shortcode <strong>[phone]<\/strong> to display the phone number.",
+            "new_lines": "wpautop",
+            "esc_html": 0
         },
         {
             "key": "field_592f0a52483bc",
@@ -723,5 +740,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496798598
+    "modified": 1496869335
 }
