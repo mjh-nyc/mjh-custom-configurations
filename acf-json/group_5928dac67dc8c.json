@@ -33,7 +33,8 @@
             },
             "choices": {
                 "Sponsored by": "Sponsored by",
-                "Presented by": "Presented by"
+                "Presented by": "Presented by",
+                "Co-presented by": "Co-presented by"
             },
             "default_value": [],
             "allow_null": 0,
@@ -272,5 +273,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496433457
+    "modified": 1497394896
 }
