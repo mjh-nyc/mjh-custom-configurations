@@ -63,7 +63,7 @@ function mjh_create_post_types() {
 		'rewrite' => array( 'slug' => 'exhibitions' ),
 		)
 	);
-	register_exhibition_category();
+	//register_exhibition_category();
 }
 add_action( 'init', 'mjh_create_post_types' );
 
@@ -95,7 +95,7 @@ function register_event_category(){
 	register_taxonomy( 'event_category', array( 'event' ), $args );
 }
 
-function register_exhibition_category(){
+/*function register_exhibition_category(){
 	// Add new taxonomy, make it hierarchical (like categories)
 	$labels = array(
 		'name'              => _x( 'Exhibition Categories', 'taxonomy general name', 'sage' ),
@@ -121,7 +121,7 @@ function register_exhibition_category(){
 	);
 
 	register_taxonomy( 'exhibition_category', array( 'exhibition' ), $args );
-}
+}*/
 
 // Change label of post to Blog & Press
 function mjh_change_post_label() {
