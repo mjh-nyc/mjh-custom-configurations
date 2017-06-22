@@ -28,11 +28,11 @@
             "return_format": "value"
         },
         {
-            "key": "field_594bf98ea6d25",
-            "label": "Recurring event information",
-            "name": "",
-            "type": "message",
-            "instructions": "",
+            "key": "field_594c0dbe0f949",
+            "label": "Event recurrence",
+            "name": "event_recurrence",
+            "type": "text",
+            "instructions": "Recurring events will be pushed to the top of the listing. For recurring events, date and time entry fields are not available. Please specify the recurrence in the field provided, include complex recurrence rules within the body of the event.",
             "required": 0,
             "conditional_logic": [
                 [
@@ -48,9 +48,11 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Recurring events will be pushed to the top of the listing. For recurring events, data and time entry fields are not available. Please specify the recurrence within the body of the event.",
-            "new_lines": "",
-            "esc_html": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5930950a5dfdb",
@@ -435,5 +437,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1498152288
+    "modified": 1498156568
 }
