@@ -53,25 +53,6 @@
             "esc_html": 0
         },
         {
-            "key": "field_593874053bc87",
-            "label": "Is this a one-time event?",
-            "name": "one_off_bool",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Yes, this is a one-time event",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_5930950a5dfdb",
             "label": "Event start date",
             "name": "event_start_date",
@@ -454,5 +435,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1498151921
+    "modified": 1498152288
 }
