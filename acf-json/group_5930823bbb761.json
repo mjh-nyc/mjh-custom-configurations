@@ -229,12 +229,31 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_594d28f343918",
+            "label": "Event ticket button label",
+            "name": "event_ticket_button_label",
+            "type": "text",
+            "instructions": "Enter your custom ticket button label",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get Tickets",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 25
         },
         {
             "key": "field_593190acc1942",
@@ -437,5 +456,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1498156568
+    "modified": 1498229339
 }
