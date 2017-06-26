@@ -15,11 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_592e2b5bb1e00",
             "min": 0,
             "max": 0,
-            "layout": "row",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add featured content",
             "sub_fields": [
                 {
                     "key": "field_592e2b5bb1e00",
@@ -30,7 +30,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -49,7 +49,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -78,10 +78,10 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "collapsed": "field_59291ef594c75",
             "min": 0,
             "max": 0,
-            "layout": "row",
+            "layout": "block",
             "button_label": "",
             "sub_fields": [
                 {
@@ -129,14 +129,14 @@
                 },
                 {
                     "key": "field_5929209b94c76",
-                    "label": "Card URL",
+                    "label": "Card button URL",
                     "name": "card_url",
                     "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "38",
                         "class": "",
                         "id": ""
                     },
@@ -145,14 +145,14 @@
                 },
                 {
                     "key": "field_593018cf6bfc1",
-                    "label": "Card URL Label",
+                    "label": "Card button URL label",
                     "name": "card_url_label",
                     "type": "text",
-                    "instructions": "Label for the button that links the URL",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "38",
                         "class": "",
                         "id": ""
                     },
@@ -161,6 +161,25 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_59515e412d9b0",
+                    "label": "New window?",
+                    "name": "card_url_new_window",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "24",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         }
@@ -182,5 +201,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496324439
+    "modified": 1498505257
 }
