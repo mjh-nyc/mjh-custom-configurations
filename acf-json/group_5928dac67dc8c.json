@@ -34,7 +34,8 @@
             "choices": {
                 "Sponsored by": "Sponsored by",
                 "Presented by": "Presented by",
-                "Co-presented by": "Co-presented by"
+                "Co-presented by": "Co-presented by",
+                "In partnership with": "In partnership with"
             },
             "default_value": [],
             "allow_null": 0,
@@ -156,7 +157,8 @@
             "choices": {
                 "Co-presented by": "Co-presented by",
                 "Co-sponsored by": "Co-sponsored by",
-                "Special thanks to": "Special thanks to"
+                "Special thanks to": "Special thanks to",
+                "In partnership with": "In partnership with"
             },
             "default_value": [],
             "allow_null": 0,
@@ -273,5 +275,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1497394896
+    "modified": 1498602345
 }
