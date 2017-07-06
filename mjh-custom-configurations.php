@@ -64,6 +64,36 @@ function mjh_create_post_types() {
 		)
 	);
 	//register_exhibition_category();
+
+    // Register testimony post type
+    $testimony_labels = array(
+        'name' => 'Testimonies',
+        'singular_name' => 'Testimony',
+        'add_new' => 'Add New Testimony',
+        'add_new_item' => 'Add New Testimony',
+        'edit_item' => 'Edit Testimony',
+        'new_item' => 'New Testimony',
+        'all_items' => 'All Testimonies',
+        'view_item' => 'View Testimony',
+        'search_items' => 'Search Testimonies',
+        'not_found' =>  'No Testimonies Found',
+        'not_found_in_trash' => 'No Testimonies Found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Testimonies',
+    );
+    register_post_type( 'testimony', array(
+        'labels' => $testimony_labels,
+        'menu_icon' => 'dashicons-microphone',
+        'has_archive' => true,
+        'public' => true,
+        'supports' => array( 'title', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+        'exclude_from_search' => false,
+        'capability_type' => 'post',
+        'rewrite' => array( 'slug' => 'testimonies' ),
+        )
+    );
+    register_testimony_category();
+
 }
 add_action( 'init', 'mjh_create_post_types' );
 
@@ -80,7 +110,6 @@ function register_event_category(){
 		'update_item'       => __( 'Update Event Category', 'sage' ),
 		'add_new_item'      => __( 'Add New Event Category', 'sage' ),
 		'new_item_name'     => __( 'New Event Category Name', 'sage' ),
-		'menu_name'         => __( 'Event Category', 'sage' ),
 	);
 
 	$args = array(
@@ -93,6 +122,34 @@ function register_event_category(){
 	);
 
 	register_taxonomy( 'event_category', array( 'event' ), $args );
+}
+
+function register_testimony_category(){
+    // Add new taxonomy, make it hierarchical (like categories)
+    $labels = array(
+        'name'              => _x( 'Testimony Categories', 'taxonomy general name', 'sage' ),
+        'singular_name'     => _x( 'Testimony Category', 'taxonomy singular name', 'sage' ),
+        'search_items'      => __( 'Search Testimony Categories', 'sage' ),
+        'all_items'         => __( 'All Testimony Categories', 'sage' ),
+        'parent_item'       => __( 'Parent Testimony Category', 'sage' ),
+        'parent_item_colon' => __( 'Parent Testimony Category:', 'sage' ),
+        'edit_item'         => __( 'Edit Testimony Category', 'sage' ),
+        'update_item'       => __( 'Update Testimony Category', 'sage' ),
+        'add_new_item'      => __( 'Add New Testimony Category', 'sage' ),
+        'new_item_name'     => __( 'New Testimony Category Name', 'sage' ),
+        'menu_name'         => __( 'Categories', 'sage' ),
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'testimony-category' ),
+    );
+
+    register_taxonomy( 'testimony_category', array( 'testimony' ), $args );
 }
 
 /*function register_exhibition_category(){
