@@ -17,7 +17,7 @@ If you are planning to work on acf-pro, here are the steps to follow:
 4. Now we need to push the tag `git push origin --tags`
 5. Change directory to the project root.
 6. Open the composer.json
-7. Under `repositories` configs, look for this plugin `mjh-nyc/mjh-custom-configurations` and update the `version` to the tag you added
+7. Under `repositories` configs, look for this plugin `mjh-nyc/mjh-custom-configurations` and update the `reference` value under `source` to the tag you added
 8. You can run `composer update` to checkout your plugin to the tag (optional if you plan to do more work)
 9. Commit composer files to root
 
