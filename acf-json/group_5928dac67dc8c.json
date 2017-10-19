@@ -32,10 +32,11 @@
                 "id": ""
             },
             "choices": {
-                "Sponsored by": "Sponsored by",
-                "Presented by": "Presented by",
                 "Co-presented by": "Co-presented by",
-                "In partnership with": "In partnership with"
+                "Presented by": "Presented by",
+                "Sponsored by": "Sponsored by",
+                "In partnership with": "In partnership with",
+                "Created by": "Created by"
             },
             "default_value": [],
             "allow_null": 0,
@@ -158,7 +159,8 @@
                 "Co-presented by": "Co-presented by",
                 "Co-sponsored by": "Co-sponsored by",
                 "Special thanks to": "Special thanks to",
-                "In partnership with": "In partnership with"
+                "In partnership with": "In partnership with",
+                "Created by": "Created by"
             },
             "default_value": [],
             "allow_null": 0,
@@ -270,10 +272,8 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "custom_fields"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1498602345
+    "modified": 1508441638
 }
