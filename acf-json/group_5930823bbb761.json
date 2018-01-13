@@ -83,7 +83,7 @@
                 "id": ""
             },
             "display_format": "d\/m\/Y",
-            "return_format": "F j, Y",
+            "return_format": "l F j, Y",
             "first_day": 1
         },
         {
@@ -108,7 +108,7 @@
                 "id": ""
             },
             "display_format": "d\/m\/Y",
-            "return_format": "F j, Y",
+            "return_format": "l F j, Y",
             "first_day": 1
         },
         {
@@ -269,6 +269,25 @@
                 "id": ""
             },
             "message": "Yes, I want to enter a specific location for this event",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a5944dd99c19",
+            "label": "Is this a live event?",
+            "name": "event_live",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes, this is a live event",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -456,5 +475,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1508441642
+    "modified": 1515814163
 }
