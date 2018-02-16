@@ -3,31 +3,6 @@
     "title": "Press Options",
     "fields": [
         {
-            "key": "field_5a7a187bdcef7",
-            "label": "Press item category",
-            "name": "press_item_category",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "coverage": "Press Coverage",
-                "releases": "Museum Press Releases"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
-        },
-        {
             "key": "field_5a7a18f0dcef8",
             "label": "Publication logo",
             "name": "publication_logo",
@@ -88,5 +63,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1518636180
+    "modified": 1518802419
 }
