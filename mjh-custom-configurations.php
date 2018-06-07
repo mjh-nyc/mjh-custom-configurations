@@ -36,6 +36,37 @@ function mjh_create_post_types() {
 		)
 	);
 	register_event_category();
+
+
+    // Publications
+    $publication_labels = array(
+        'name' => 'Publications',
+        'singular_name' => 'Publication',
+        'add_new' => 'Add New Publication',
+        'add_new_item' => 'Add New Publication',
+        'edit_item' => 'Edit Publication',
+        'new_item' => 'New Publication',
+        'all_items' => 'All Publications',
+        'view_item' => 'View Publication',
+        'search_items' => 'Search Publications',
+        'not_found' =>  'No Publications Found',
+        'not_found_in_trash' => 'No Publications Found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Publications',
+    );
+    register_post_type( 'publication', array(
+        'labels' => $publication_labels,
+        'menu_icon' => 'dashicons-book-alt',
+        'has_archive' => true,
+        'public' => true,
+        'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+        'exclude_from_search' => false,
+        'capability_type' => 'post',
+        'rewrite' => array( 'slug' => 'publications' ),
+        )
+    );
+    register_publication_category();
+    
     // Register exhibition
 	$exhibition_labels = array(
  		'name' => 'Exhibitions',
@@ -122,6 +153,34 @@ function register_event_category(){
 	);
 
 	register_taxonomy( 'event_category', array( 'event' ), $args );
+}
+
+
+function register_publication_category(){
+    // Add new taxonomy, make it hierarchical (like categories)
+    $labels = array(
+        'name'              => _x( 'Publication Categories', 'taxonomy general name', 'sage' ),
+        'singular_name'     => _x( 'Publication Category', 'taxonomy singular name', 'sage' ),
+        'search_items'      => __( 'Search Publication Categories', 'sage' ),
+        'all_items'         => __( 'All Publication Categories', 'sage' ),
+        'parent_item'       => __( 'Parent Publication Category', 'sage' ),
+        'parent_item_colon' => __( 'Parent Publication Category:', 'sage' ),
+        'edit_item'         => __( 'Edit Publication Category', 'sage' ),
+        'update_item'       => __( 'Update Publication Category', 'sage' ),
+        'add_new_item'      => __( 'Add New Publication Category', 'sage' ),
+        'new_item_name'     => __( 'New Publication Category Name', 'sage' ),
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'publication-category' ),
+    );
+
+    register_taxonomy( 'publication_category', array( 'publication' ), $args );
 }
 
 function register_testimony_category(){
