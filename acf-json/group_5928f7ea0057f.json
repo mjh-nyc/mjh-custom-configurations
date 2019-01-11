@@ -56,6 +56,13 @@
                 "operator": "==",
                 "value": "event"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "views\/template-core.blade.php"
+            }
         ]
     ],
     "menu_order": 10,
@@ -68,5 +75,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516043591
+    "modified": 1547238523
 }

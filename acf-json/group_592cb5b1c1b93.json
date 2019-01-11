@@ -29,6 +29,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "views\/template-core.blade.php"
+            }
         ]
     ],
     "menu_order": 12,
@@ -41,5 +48,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1515454785
+    "modified": 1547238543
 }

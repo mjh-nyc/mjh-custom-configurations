@@ -7,7 +7,7 @@
             "label": "Highlighted Exhibition",
             "name": "highlighted_exhibition",
             "type": "post_object",
-            "instructions": "",
+            "instructions": "Select an exhibition to be set as Museum’s core offering",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,18 +19,37 @@
                 "exhibition"
             ],
             "taxonomy": [],
-            "allow_null": 0,
+            "allow_null": 1,
             "multiple": 0,
-            "return_format": "object",
+            "return_format": "id",
             "ui": 1
+        },
+        {
+            "key": "field_5c38b8339d5db",
+            "label": "Highlighted Exhibition Logo",
+            "name": "highlighted_exhibition_logo",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "jpg,png,gif"
         }
     ],
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "options_page",
                 "operator": "==",
-                "value": "views\/template-exhibitions-listing.blade.php"
+                "value": "acf-options-exhibition-options"
             }
         ]
     ],
@@ -42,5 +61,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1515454758
+    "modified": 1547221088
 }

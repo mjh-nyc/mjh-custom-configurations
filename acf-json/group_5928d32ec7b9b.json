@@ -49,6 +49,38 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_5c36e7e934476",
+            "label": "Ticket type",
+            "name": "ticket_type",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593356d8e9595",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [
+                "Regular Ticket",
+                "Timed Ticket"
+            ],
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
             "key": "field_5928f64cf9c4f",
             "label": "Exhibition start date",
             "name": "exhibition_start_date",
@@ -145,5 +177,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1515814741
+    "modified": 1547205598
 }
