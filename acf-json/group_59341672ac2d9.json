@@ -1,6 +1,6 @@
 {
     "key": "group_59341672ac2d9",
-    "title": "Exhibitions Listing",
+    "title": "Featured Exhibition Settings",
     "fields": [
         {
             "key": "field_5934167d312d5",
@@ -42,6 +42,26 @@
             "min_size": "",
             "max_size": "",
             "mime_types": "jpg,png,gif"
+        },
+        {
+            "key": "field_5c39ced662a7f",
+            "label": "Exhibition Features",
+            "name": "exhibition_features",
+            "type": "post_object",
+            "instructions": "Select up to 3 pieces of site content that you would like to feature on the exhibition landing page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
         }
     ],
     "location": [
@@ -61,5 +81,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1547221088
+    "modified": 1547292712
 }

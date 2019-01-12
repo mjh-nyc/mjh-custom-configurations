@@ -1,0 +1,107 @@
+{
+    "key": "group_5c39cbfb89064",
+    "title": "Press Quotes",
+    "fields": [
+        {
+            "key": "field_5c39cc99760ff",
+            "label": "Press Quotes",
+            "name": "press_quotes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5c39cc44c87ed",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add press quote",
+            "sub_fields": [
+                {
+                    "key": "field_5c39cc07c87eb",
+                    "label": "Press quote",
+                    "name": "press_quote",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5c39cc44c87ed",
+                    "label": "Press source name",
+                    "name": "press_source_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c39cc1dc87ec",
+                    "label": "Press source logo",
+                    "name": "press_source_logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "jpg,png,gif"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "exhibition"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1547292042
+}
