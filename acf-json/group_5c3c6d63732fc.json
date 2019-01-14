@@ -1,0 +1,45 @@
+{
+    "key": "group_5c3c6d63732fc",
+    "title": "Landing Page Settings",
+    "fields": [
+        {
+            "key": "field_5c3c6d69746f3",
+            "label": "Redirect link",
+            "name": "redirect_link",
+            "type": "page_link",
+            "instructions": "You can redirect this page to another page within this website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "views\/template-core.blade.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1547465290
+}
