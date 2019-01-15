@@ -39,6 +39,18 @@
                 "operator": "==",
                 "value": "category:coverage"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:auschwitz"
+            }
         ]
     ],
     "menu_order": 30,
@@ -55,5 +67,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1518816880
+    "modified": 1547584504
 }
