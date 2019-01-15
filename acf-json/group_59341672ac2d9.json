@@ -102,6 +102,21 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5c3e502ae7e75",
+            "label": "Highlighted Exhibition Button Link",
+            "name": "highlighted_exhibition_button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
         }
     ],
     "location": [
@@ -121,5 +136,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1547580690
+    "modified": 1547587674
 }
