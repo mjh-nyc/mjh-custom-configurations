@@ -81,6 +81,56 @@
             "return_format": "value"
         },
         {
+            "key": "field_5c3e88c0d02ea",
+            "label": "Exhibition Ticket Button Text",
+            "name": "exhibition_ticket_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593356d8e9595",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Buy Tickets",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c3e893b23986",
+            "label": "Exhibition Ticket Button Link",
+            "name": "exhibition_ticket_button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593356d8e9595",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
             "key": "field_5928f64cf9c4f",
             "label": "Exhibition start date",
             "name": "exhibition_start_date",
@@ -177,5 +227,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547205598
+    "modified": 1547602341
 }
