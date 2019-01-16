@@ -51,6 +51,18 @@
                 "operator": "==",
                 "value": "category:auschwitz"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:madrid"
+            }
         ]
     ],
     "menu_order": 30,
@@ -67,5 +79,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547584504
+    "modified": 1547609571
 }
