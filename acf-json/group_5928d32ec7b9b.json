@@ -128,7 +128,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url"
+            "return_format": "array"
         },
         {
             "key": "field_5928f64cf9c4f",
@@ -227,5 +227,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547602341
+    "modified": 1547673815
 }
