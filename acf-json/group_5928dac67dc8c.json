@@ -36,7 +36,8 @@
                 "Presented by": "Presented by",
                 "Sponsored by": "Sponsored by",
                 "In partnership with": "In partnership with",
-                "Created by": "Created by"
+                "Created by": "Created by",
+                "Presented in NYC with": "Presented in NYC with"
             },
             "default_value": [],
             "allow_null": 0,
@@ -275,5 +276,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1515454820
+    "modified": 1547854814
 }
