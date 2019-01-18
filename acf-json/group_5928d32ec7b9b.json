@@ -49,38 +49,6 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_5c36e7e934476",
-            "label": "Ticket type",
-            "name": "ticket_type",
-            "type": "checkbox",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_593356d8e9595",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": [
-                "Regular Ticket",
-                "Timed Ticket"
-            ],
-            "allow_custom": 0,
-            "save_custom": 0,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value"
-        },
-        {
             "key": "field_5c3e88c0d02ea",
             "label": "Exhibition tickets button text",
             "name": "exhibition_ticket_button_text",
@@ -222,6 +190,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5c423fe824809",
+            "label": "Exhibition tickets prompt",
+            "name": "exhibition_tickets_prompt",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -246,5 +233,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547826278
+    "modified": 1547846592
 }
