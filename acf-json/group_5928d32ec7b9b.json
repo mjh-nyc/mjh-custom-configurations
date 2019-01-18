@@ -82,7 +82,7 @@
         },
         {
             "key": "field_5c3e88c0d02ea",
-            "label": "Exhibition Ticket Button Text",
+            "label": "Exhibition tickets button text",
             "name": "exhibition_ticket_button_text",
             "type": "text",
             "instructions": "",
@@ -109,7 +109,7 @@
         },
         {
             "key": "field_5c3e893b23986",
-            "label": "Exhibition Ticket Button Link",
+            "label": "Exhibition tickets button link",
             "name": "exhibition_ticket_button_link",
             "type": "link",
             "instructions": "",
@@ -203,6 +203,25 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "jpg,png,gif"
+        },
+        {
+            "key": "field_5c41f3f32fb67",
+            "label": "Exhibition view prompt",
+            "name": "exhibition_view_prompt",
+            "type": "text",
+            "instructions": "If this exhibition is featured on homepage, this is the button text that prompts visitors to go to this exhibition’s landing page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Discover",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -227,5 +246,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547673815
+    "modified": 1547826278
 }
