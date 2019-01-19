@@ -96,6 +96,21 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_5c437c2031e5f",
+            "label": "Featured video",
+            "name": "featured_video",
+            "type": "link",
+            "instructions": "Upload a video file to a CDN, then copy and paste its link here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
         }
     ],
     "location": [
@@ -115,5 +130,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1547840218
+    "modified": 1547926636
 }
