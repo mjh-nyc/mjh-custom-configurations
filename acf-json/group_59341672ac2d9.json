@@ -3,13 +3,40 @@
     "title": "Featured Exhibition Settings",
     "fields": [
         {
+            "key": "field_5c474fbbfa5fb",
+            "label": "Highlight a specific exhibition",
+            "name": "highlight_a_specific_exhibition",
+            "type": "true_false",
+            "instructions": "Setting this option will update the homepage layout to feature the exhibition you select.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes! Highlight a specific exhibition.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5934167d312d5",
             "label": "Highlighted Exhibition",
             "name": "highlighted_exhibition",
             "type": "post_object",
             "instructions": "Select an exhibition to be set as Museum’s core offering",
             "required": 1,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c474fbbfa5fb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -25,32 +52,21 @@
             "ui": 1
         },
         {
-            "key": "field_5c38b8339d5db",
-            "label": "Highlighted Exhibition Logo",
-            "name": "highlighted_exhibition_logo",
-            "type": "file",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": "jpg,png,gif"
-        },
-        {
             "key": "field_5c39ced662a7f",
             "label": "Exhibition Features",
             "name": "exhibition_features",
             "type": "post_object",
             "instructions": "Select up to 3 pieces of site content that you would like to feature on the exhibition landing page.",
             "required": 1,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c474fbbfa5fb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -68,9 +84,17 @@
             "label": "Press Page Link",
             "name": "press_page_link",
             "type": "link",
-            "instructions": "",
+            "instructions": "Specify a unique press page for the featured exhibition.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c474fbbfa5fb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -83,9 +107,17 @@
             "label": "Exhibition information",
             "name": "exhibition_information",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "An exhibition message to be displayed on the exhibition landing page.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c474fbbfa5fb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -96,21 +128,6 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_5c437c2031e5f",
-            "label": "Featured video",
-            "name": "featured_video",
-            "type": "link",
-            "instructions": "Upload a video file to a CDN, then copy and paste its link here.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url"
         }
     ],
     "location": [
@@ -130,5 +147,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1547926636
+    "modified": 1548177911
 }

@@ -49,56 +49,6 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_5c3e88c0d02ea",
-            "label": "Exhibition tickets button text",
-            "name": "exhibition_ticket_button_text",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_593356d8e9595",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Buy Tickets",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c3e893b23986",
-            "label": "Exhibition tickets button link",
-            "name": "exhibition_ticket_button_link",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_593356d8e9595",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
             "key": "field_5928f64cf9c4f",
             "label": "Exhibition start date",
             "name": "exhibition_start_date",
@@ -149,6 +99,75 @@
             "first_day": 0
         },
         {
+            "key": "field_5c3e88c0d02ea",
+            "label": "Exhibition tickets button text",
+            "name": "exhibition_ticket_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593356d8e9595",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Buy Tickets",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c3e893b23986",
+            "label": "Exhibition tickets button link",
+            "name": "exhibition_ticket_button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_593356d8e9595",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5c423fe824809",
+            "label": "Exhibition tickets prompt",
+            "name": "exhibition_tickets_prompt",
+            "type": "text",
+            "instructions": "Text that appears over the exhibition tickets button on the exhibition detail page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59291901ca9ca",
             "label": "Hero image",
             "name": "hero_image",
@@ -173,6 +192,38 @@
             "mime_types": "jpg,png,gif"
         },
         {
+            "key": "field_5c474582d942a",
+            "label": "Featured exhibition options",
+            "name": "",
+            "type": "accordion",
+            "instructions": "If this exhibition is set as “featured” under Exhibition Options, expand this area to fill in the fields to customize this exhibition appearance on homepage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c437c2031e5f",
+            "label": "Featured video",
+            "name": "featured_video",
+            "type": "link",
+            "instructions": "Upload a video file to a CDN, then copy and paste its link here. The video is only shown on homepage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
             "key": "field_5c41f3f32fb67",
             "label": "Exhibition view prompt",
             "name": "exhibition_view_prompt",
@@ -192,10 +243,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c423fe824809",
-            "label": "Exhibition tickets prompt",
-            "name": "exhibition_tickets_prompt",
-            "type": "text",
+            "key": "field_5c38b8339d5db",
+            "label": "Highlighted Exhibition Logo",
+            "name": "highlighted_exhibition_logo",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -204,11 +255,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "jpg,png,gif"
         }
     ],
     "location": [
@@ -233,5 +284,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547846592
+    "modified": 1548175572
 }
