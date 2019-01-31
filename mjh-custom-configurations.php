@@ -278,4 +278,24 @@ add_filter('acf/settings/load_json', function($paths) {
 	$paths[] = WPMU_PLUGIN_DIR . '/mjh-custom-configurations/acf-json';
     return $paths;
 });
+
+
+//***************************************************************//
+// FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET ////////////////////////////////
+// Remove form style
+function mjh_dequeue_formiddable_frontend_css() {
+	wp_dequeue_style( 'formidable' );
+	wp_dequeue_style( 'frm_fonts' );
+}
+add_action( 'wp_print_styles', 'mjh_dequeue_formiddable_frontend_css', 100 );
+
+function mjh_enqueue_formiddable_frontend_css($params, $fields, $form){
+	$upload_dir = wp_upload_dir();
+	wp_enqueue_style( 'mjh_formidable', $upload_dir['baseurl'] .  '/formidable/css/formidablepro.css' );
+	wp_enqueue_style( 'mjh_frm_fonts', plugins_url() .  '/formidable-pro/css/frm_fonts.css' );
+}
+add_action('frm_display_form_action', 'mjh_enqueue_formiddable_frontend_css', 100, 3);
+
+//END FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET
+//***************************************************************//
 ?>
