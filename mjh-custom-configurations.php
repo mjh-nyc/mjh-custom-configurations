@@ -278,8 +278,6 @@ add_filter('acf/settings/load_json', function($paths) {
 	$paths[] = WPMU_PLUGIN_DIR . '/mjh-custom-configurations/acf-json';
     return $paths;
 });
-
-
 //***************************************************************//
 // FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET ////////////////////////////////
 // Remove form style
@@ -297,5 +295,14 @@ function mjh_enqueue_formiddable_frontend_css($params, $fields, $form){
 add_action('frm_display_form_action', 'mjh_enqueue_formiddable_frontend_css', 100, 3);
 
 //END FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET
+//***************************************************************//
+//***************************************************************//
+// FLOWPAPER REMOVE LITLY ////////////////////////////////
+function mjh_dequeue_flowpaper_frontend_css() {
+	wp_dequeue_style( 'lity-css' );
+	wp_dequeue_script( 'lity-js' );
+}
+add_action( 'wp_print_styles', 'mjh_dequeue_flowpaper_frontend_css', 100 );
+//END FLOWPAPER REMOVE LITLY
 //***************************************************************//
 ?>
