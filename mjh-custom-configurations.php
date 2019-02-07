@@ -294,6 +294,13 @@ function mjh_enqueue_formiddable_frontend_css($params, $fields, $form){
 }
 add_action('frm_display_form_action', 'mjh_enqueue_formiddable_frontend_css', 100, 3);
 
+// Set title to form for screen reader
+function mjh_custom_form_attributes( $attributes, $form ){
+	$attributes .= "title=".str_replace(" ","_",$form->name);
+    return $attributes;
+}
+add_filter( 'frm_form_attributes', 'mjh_custom_form_attributes', 10, 2 );
+
 //END FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET
 //***************************************************************//
 //***************************************************************//
