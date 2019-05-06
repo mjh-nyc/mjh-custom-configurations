@@ -260,6 +260,25 @@
             "min_size": "",
             "max_size": "",
             "mime_types": "jpg,png,gif"
+        },
+        {
+            "key": "field_5cd0b3a60fe68",
+            "label": "Notes & announcements",
+            "name": "exhibition_notes_announcements",
+            "type": "text",
+            "instructions": "Enter any special notes about this exhibition such as its opening or closing dates, special member preview days, etc.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 255
         }
     ],
     "location": [
@@ -277,12 +296,11 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "custom_fields",
         "discussion",
         "comments",
         "categories"
     ],
     "active": 1,
     "description": "",
-    "modified": 1548175572
+    "modified": 1557181456
 }
