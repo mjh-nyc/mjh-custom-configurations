@@ -66,6 +66,25 @@
             ]
         },
         {
+            "key": "field_5e8372157f6db",
+            "label": "Plan your visit section header",
+            "name": "plan_your_visit_section_header",
+            "type": "text",
+            "instructions": "Set the title for the ”Plan your visit” section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Plan Your Visit",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59291ea494c73",
             "label": "Plan your visit card deck",
             "name": "plan_deck_repeater",
@@ -165,6 +184,25 @@
             ]
         },
         {
+            "key": "field_5e8370cc8a7f4",
+            "label": "Featured events header",
+            "name": "featured_events_header",
+            "type": "text",
+            "instructions": "Set the header text to appear above the featured events",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Events",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59e90a516bc2a",
             "label": "Featured events",
             "name": "featured_events_repeater",
@@ -212,11 +250,11 @@
             "label": "Blog feature",
             "name": "blog_feature",
             "type": "checkbox",
-            "instructions": "Check this box to enable a blog feature on the homepage. The blog feature adds a slider of the latest blog posts to the homepage right above the “Museum Experiences” section.",
+            "instructions": "Check this box to enable a blog feature on the homepage. The blog feature adds a slider of the latest blog posts to the homepage.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -229,6 +267,33 @@
             "toggle": 0,
             "return_format": "value",
             "save_custom": 0
+        },
+        {
+            "key": "field_5e836f8694629",
+            "label": "Blog feature title",
+            "name": "blog_feature_title",
+            "type": "text",
+            "instructions": "Enter the header title to appear above the blog slider",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e70eaba3d505",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "From The Blog",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5e70ee4da7cdf",
@@ -371,5 +436,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1584461380
+    "modified": 1585672887
 }
