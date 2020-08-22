@@ -400,25 +400,6 @@
             "delay": 0
         },
         {
-            "key": "field_5a5d00e95fc26",
-            "label": "Announcements Homepage",
-            "name": "announcements_homepage",
-            "type": "wysiwyg",
-            "instructions": "Manages the announcement messaging on the homepage ( purple section )",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
             "key": "field_592f0db3f1c73",
             "label": "Contact Information",
             "name": "",
@@ -582,25 +563,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_59374b0fbfe08",
-            "label": "Tickets header",
-            "name": "tickets_header",
-            "type": "text",
-            "instructions": "Enter the header title for the Tickets section of the homepage",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Tickets",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_59374b95bfe09",
             "label": "Ticketing information",
             "name": "ticketing_information",
@@ -757,7 +719,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1517932733
+    "modified": 1597951230
 }

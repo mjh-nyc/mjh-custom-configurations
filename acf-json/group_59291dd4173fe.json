@@ -3,303 +3,10 @@
     "title": "Homepage",
     "fields": [
         {
-            "key": "field_59291deda8663",
-            "label": "Featured carousel",
-            "name": "featured_carousel_repeater",
-            "type": "repeater",
-            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note, that events or exhibitions with a defined end date will be automatically removed from the carousel after their end date.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "row",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_592e2b5bb1e00",
-                    "label": "Header",
-                    "name": "carousel_item_header",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Now on View",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_59291e3fa8664",
-                    "label": "Carousel item",
-                    "name": "carousel_item",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "exhibition",
-                        "event"
-                    ],
-                    "taxonomy": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "id",
-                    "ui": 1
-                }
-            ]
-        },
-        {
-            "key": "field_5e8372157f6db",
-            "label": "Plan your visit section header",
-            "name": "plan_your_visit_section_header",
-            "type": "text",
-            "instructions": "Set the title for the ”Plan your visit” section",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Plan Your Visit",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_59291ea494c73",
-            "label": "Plan your visit card deck",
-            "name": "plan_deck_repeater",
-            "type": "repeater",
-            "instructions": "Add custom cards to the “Plan your visit” section of the homepage. These can be location in context cards, accepted passes, promotions and featured partner information.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "row",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_59291ec794c74",
-                    "label": "Card image",
-                    "name": "card_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_59291ef594c75",
-                    "label": "Card caption",
-                    "name": "card_caption",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5929209b94c76",
-                    "label": "Card URL",
-                    "name": "card_url",
-                    "type": "url",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": ""
-                },
-                {
-                    "key": "field_593018cf6bfc1",
-                    "label": "Card URL Label",
-                    "name": "card_url_label",
-                    "type": "text",
-                    "instructions": "Label for the button that links the URL",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
-        },
-        {
-            "key": "field_5e8370cc8a7f4",
-            "label": "Featured events header",
-            "name": "featured_events_header",
-            "type": "text",
-            "instructions": "Set the header text to appear above the featured events",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Events",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_59e90a516bc2a",
-            "label": "Featured events",
-            "name": "featured_events_repeater",
-            "type": "repeater",
-            "instructions": "Select events you would like to feature on the homepage events section. Note, that events with a defined end date will be automatically removed from the section after their end date.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 3,
-            "layout": "row",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_59e90a516bc2c",
-                    "label": "Event item",
-                    "name": "event_item",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "event"
-                    ],
-                    "taxonomy": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "id",
-                    "ui": 1
-                }
-            ]
-        },
-        {
-            "key": "field_5e70eaba3d505",
-            "label": "Blog feature",
-            "name": "blog_feature",
-            "type": "checkbox",
-            "instructions": "Check this box to enable a blog feature on the homepage. The blog feature adds a slider of the latest blog posts to the homepage.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "1": "Enabled"
-            },
-            "allow_custom": 0,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value",
-            "save_custom": 0
-        },
-        {
-            "key": "field_5e836f8694629",
-            "label": "Blog feature title",
-            "name": "blog_feature_title",
-            "type": "text",
-            "instructions": "Enter the header title to appear above the blog slider",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5e70eaba3d505",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "From The Blog",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5e70ee4da7cdf",
-            "label": "Homepage special feature",
-            "name": "homepage_special_feature",
-            "type": "group",
+            "key": "field_5f3c14b726e8e",
+            "label": "Homepage Content Sections",
+            "name": "flexible_homepage_content_sections",
+            "type": "flexible_content",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -308,105 +15,744 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_5e70f4e2f3f8e",
-                    "label": "Show special feature?",
-                    "name": "show_special_feature",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "Show special feature",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
+            "layouts": {
+                "layout_5f3c14e7ddd93": {
+                    "key": "layout_5f3c14e7ddd93",
+                    "name": "special_feature_section",
+                    "label": "Special Feature Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e70ee85a7ce0",
+                            "label": "Special feature image",
+                            "name": "special_feature_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".png,.gif,.jpg,.jpeg"
+                        },
+                        {
+                            "key": "field_5e70f011bebac",
+                            "label": "Special feature title",
+                            "name": "special_feature_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e70eed0a7ce1",
+                            "label": "Special feature content",
+                            "name": "special_feature_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5e70eefea7ce2",
+                            "label": "Special feature link",
+                            "name": "special_feature_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 },
-                {
-                    "key": "field_5e70ee85a7ce0",
-                    "label": "Special feature image",
-                    "name": "special_feature_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ".png,.gif,.jpg,.jpeg"
+                "layout_5f3c245370417": {
+                    "key": "layout_5f3c245370417",
+                    "name": "custom_section",
+                    "label": "Custom Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c245370418",
+                            "label": "Custom Section Title",
+                            "name": "custom_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3c8684b414f",
+                            "label": "Custom Section Content Repeater",
+                            "name": "custom_section_content_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 2,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f3c86bdb4150",
+                                    "label": "Custom Content",
+                                    "name": "custom_content",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "clone": [
+                                        "group_5dc09652d64a3"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 },
-                {
-                    "key": "field_5e70f011bebac",
-                    "label": "Special feature title",
-                    "name": "special_feature_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                "layout_5f3c534648880": {
+                    "key": "layout_5f3c534648880",
+                    "name": "custom_carousel_section",
+                    "label": "Custom Carousel Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c534648881",
+                            "label": "Custom Carousel Section Title",
+                            "name": "custom_carousel_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3c98f226d97",
+                            "label": "Custom Carousel Section Repeater",
+                            "name": "custom_carousel_section_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f3ca2d1ab6fc",
+                                    "label": "Is Custom Content",
+                                    "name": "custom_carousel_section_is_custom_content",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5f3c991526d98",
+                                    "label": "Custom Carousel Section Content",
+                                    "name": "custom_carousel_section_content",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5f3ca2d1ab6fc",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "clone": [
+                                        "group_5dc09652d64a3"
+                                    ],
+                                    "display": "group",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 1
+                                },
+                                {
+                                    "key": "field_5f3c99781414b",
+                                    "label": "Custom Carousel Link",
+                                    "name": "custom_carousel_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5f3ca2d1ab6fc",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url"
+                                },
+                                {
+                                    "key": "field_5f3cab8ede41a",
+                                    "label": "Custom Carousel Section Post",
+                                    "name": "custom_carousel_section_post",
+                                    "type": "relationship",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5f3ca2d1ab6fc",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "post",
+                                        "event",
+                                        "exhibition",
+                                        "page"
+                                    ],
+                                    "taxonomy": "",
+                                    "filters": [
+                                        "search",
+                                        "post_type"
+                                    ],
+                                    "elements": "",
+                                    "min": "",
+                                    "max": 1,
+                                    "return_format": "id"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 },
-                {
-                    "key": "field_5e70eed0a7ce1",
-                    "label": "Special feature content",
-                    "name": "special_feature_content",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "basic",
-                    "media_upload": 0,
-                    "delay": 0
+                "layout_5f3c16019b656": {
+                    "key": "layout_5f3c16019b656",
+                    "name": "events_section",
+                    "label": "Events Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c161e9b657",
+                            "label": "Events Section Title",
+                            "name": "events_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59e90a516bc2a",
+                            "label": "Featured events",
+                            "name": "featured_events_repeater",
+                            "type": "repeater",
+                            "instructions": "Select events you would like to feature on the homepage events section. Note, that events with a defined end date will be automatically removed from the section after their end date.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 3,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59e90a516bc2c",
+                                    "label": "Event item",
+                                    "name": "event_item",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "event"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
                 },
-                {
-                    "key": "field_5e70eefea7ce2",
-                    "label": "Special feature link",
-                    "name": "special_feature_link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
+                "layout_5f3c167da4718": {
+                    "key": "layout_5f3c167da4718",
+                    "name": "about_section",
+                    "label": "About Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c16b3a4719",
+                            "label": "About Section Title",
+                            "name": "about_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3eaeeb8e681",
+                            "label": "About Section Hours Title",
+                            "name": "about_section_hours_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3eaf2e8e682",
+                            "label": "About Section Hours Copy",
+                            "name": "about_section_hours_copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f3eaf798e684",
+                            "label": "About Section Visitor Title",
+                            "name": "about_section_visitor_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3eb050e4430",
+                            "label": "About Section Visitor Links Repeater",
+                            "name": "about_section_visitor_links_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f3eb093e4431",
+                                    "label": "Link",
+                                    "name": "about_section_visitor_links_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5f3e8bb742c61",
+                            "label": "About Section Announcements",
+                            "name": "about_section_announcements",
+                            "type": "wysiwyg",
+                            "instructions": "Manages the announcement messaging on the homepage ( purple section )",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5f3e8ecc327cf",
+                            "label": "About Section Recommendation Title",
+                            "name": "about_section_recommendation_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f3e8f41327d0",
+                            "label": "About Section Recommendations",
+                            "name": "about_section_recommendations_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5f3e8f5b327d1",
+                                    "label": "About Section Recommendations Title",
+                                    "name": "about_section_recommendation_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5f3e8f83327d2",
+                                    "label": "About Section Recommendations Icon",
+                                    "name": "about_section_recommendation_icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg,png,gif"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5f3c2bd6db46b": {
+                    "key": "layout_5f3c2bd6db46b",
+                    "name": "blog_section",
+                    "label": "Blog Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c2be7db46c",
+                            "label": "Blog Section Title",
+                            "name": "blog_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_5f3c2e9f9863c": {
+                    "key": "layout_5f3c2e9f9863c",
+                    "name": "exhibitions_section",
+                    "label": "Exhibitions Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f3c2e9f9863d",
+                            "label": "Exhibitions Section Title",
+                            "name": "exhibitions_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59291deda8663",
+                            "label": "Exhibitions carousel",
+                            "name": "featured_carousel_repeater",
+                            "type": "repeater",
+                            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note, that events or exhibitions with a defined end date will be automatically removed from the carousel after their end date.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59291e3fa8664",
+                                    "label": "Carousel item",
+                                    "name": "carousel_item",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "exhibition",
+                                        "event"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_592e2b5bb1e00",
+                                    "label": "Header",
+                                    "name": "carousel_item_header",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Now on View",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
                 }
-            ]
+            },
+            "button_label": "Add Section",
+            "min": 1,
+            "max": ""
         }
     ],
     "location": [
@@ -434,7 +780,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1585672887
+    "modified": 1598027161
 }
