@@ -407,12 +407,12 @@
                 "layout_5f3c167da4718": {
                     "key": "layout_5f3c167da4718",
                     "name": "about_section",
-                    "label": "About Section",
+                    "label": "About & Visitor Information Section",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5f3c16b3a4719",
-                            "label": "About Section Title",
+                            "label": "Section Title",
                             "name": "about_section_title",
                             "type": "text",
                             "instructions": "",
@@ -430,10 +430,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5f3eaeeb8e681",
-                            "label": "About Section Hours Title",
-                            "name": "about_section_hours_title",
-                            "type": "text",
+                            "key": "field_5f47d60f0de32",
+                            "label": "Museum Hours Information",
+                            "name": "",
+                            "type": "tab",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -442,7 +442,23 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5f3eaeeb8e681",
+                            "label": "Hours (Title)",
+                            "name": "about_section_hours_title",
+                            "type": "text",
+                            "instructions": "Please note that the museum hours are set under Settings --> Museum Stats (Museum Schedule tab). The hours will be displayed under this title on the homepage.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Hours",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
@@ -450,10 +466,10 @@
                         },
                         {
                             "key": "field_5f3eaf2e8e682",
-                            "label": "About Section Hours Copy",
+                            "label": "Special Instructions",
                             "name": "about_section_hours_copy",
                             "type": "wysiwyg",
-                            "instructions": "",
+                            "instructions": "Include any special instructions for visitors regarding museum hours here",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -463,13 +479,29 @@
                             },
                             "default_value": "",
                             "tabs": "all",
-                            "toolbar": "full",
+                            "toolbar": "basic",
                             "media_upload": 1,
                             "delay": 0
                         },
                         {
+                            "key": "field_5f47d6ae0de33",
+                            "label": "Visitor Information Links",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5f3eaf798e684",
-                            "label": "About Section Visitor Title",
+                            "label": "Visitor Information (Title)",
                             "name": "about_section_visitor_title",
                             "type": "text",
                             "instructions": "",
@@ -488,10 +520,10 @@
                         },
                         {
                             "key": "field_5f3eb050e4430",
-                            "label": "About Section Visitor Links Repeater",
+                            "label": "Visitor Information Links",
                             "name": "about_section_visitor_links_repeater",
                             "type": "repeater",
-                            "instructions": "",
+                            "instructions": "Note, the last link you create as part of this list will be styled as a button",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -523,11 +555,27 @@
                             ]
                         },
                         {
+                            "key": "field_5f47d7060de34",
+                            "label": "Special Announcement Bar",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5f3e8bb742c61",
                             "label": "About Section Announcements",
                             "name": "about_section_announcements",
                             "type": "wysiwyg",
-                            "instructions": "Manages the announcement messaging on the homepage ( purple section )",
+                            "instructions": "Manages the announcement messaging on the homepage.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -537,13 +585,29 @@
                             },
                             "default_value": "",
                             "tabs": "all",
-                            "toolbar": "full",
+                            "toolbar": "basic",
                             "media_upload": 0,
                             "delay": 0
                         },
                         {
+                            "key": "field_5f47d7420de35",
+                            "label": "Recommended By",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5f3e8ecc327cf",
-                            "label": "About Section Recommendation Title",
+                            "label": "Recommendations Title",
                             "name": "about_section_recommendation_title",
                             "type": "text",
                             "instructions": "",
@@ -562,7 +626,7 @@
                         },
                         {
                             "key": "field_5f3e8f41327d0",
-                            "label": "About Section Recommendations",
+                            "label": "Recommendation Sources",
                             "name": "about_section_recommendations_repeater",
                             "type": "repeater",
                             "instructions": "",
@@ -580,8 +644,32 @@
                             "button_label": "",
                             "sub_fields": [
                                 {
+                                    "key": "field_5f3e8f83327d2",
+                                    "label": "Icon or Logo Image",
+                                    "name": "about_section_recommendation_icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "shop_thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg,png,gif"
+                                },
+                                {
                                     "key": "field_5f3e8f5b327d1",
-                                    "label": "About Section Recommendations Title",
+                                    "label": "Source Name",
                                     "name": "about_section_recommendation_title",
                                     "type": "text",
                                     "instructions": "",
@@ -597,30 +685,6 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
-                                },
-                                {
-                                    "key": "field_5f3e8f83327d2",
-                                    "label": "About Section Recommendations Icon",
-                                    "name": "about_section_recommendation_icon",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "jpg,png,gif"
                                 }
                             ]
                         }
@@ -782,5 +846,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1598027161
+    "modified": 1599523655
 }

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_592f0e41fd49f",
-            "label": "Museum Schedule",
+            "label": "Museum Opening Hours",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -365,41 +365,6 @@
             "new_lines": ""
         },
         {
-            "key": "field_592f0e9751018",
-            "label": "Announcements",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_592f0a16a61e8",
-            "label": "Announcements Top Bar",
-            "name": "annoucements",
-            "type": "wysiwyg",
-            "instructions": "Manages the announcement pop out messaging on the site",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
             "key": "field_592f0db3f1c73",
             "label": "Contact Information",
             "name": "",
@@ -547,8 +512,8 @@
             "maxlength": ""
         },
         {
-            "key": "field_59374ae5bfe07",
-            "label": "Tickets",
+            "key": "field_592f0e9751018",
+            "label": "Announcements",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -563,11 +528,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_59374b95bfe09",
-            "label": "Ticketing information",
-            "name": "ticketing_information",
+            "key": "field_592f0a16a61e8",
+            "label": "Announcements Top Bar",
+            "name": "annoucements",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "Manages the announcement pop out messaging on the site",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -580,128 +545,6 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_593750255d50f",
-            "label": "Buy tickets button label",
-            "name": "buy_tickets_button_label",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_59374bc1bfe0a",
-            "label": "Buy tickets button URL",
-            "name": "buy_tickets_button_url",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_5937537e14422",
-            "label": "Hours & Location",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5937539b14423",
-            "label": "Hours & Location header",
-            "name": "hours_and_location_header",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_593753c314424",
-            "label": "Please note:",
-            "name": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Note that the content for the Hours and Location section of the Plan Your Visit area of the homepage is dynamically generated from the content entered via the Museum Schedule and the Contact Information tabs.",
-            "new_lines": "",
-            "esc_html": 0
-        },
-        {
-            "key": "field_5937549314425",
-            "label": "Plan your visit button label",
-            "name": "plan_your_visit_button_label",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_593754ab14426",
-            "label": "Plan your visit button URL",
-            "name": "plan_your_visit_button_url",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
         }
     ],
     "location": [
@@ -721,5 +564,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1597951230
+    "modified": 1599522219
 }
