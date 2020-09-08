@@ -3,6 +3,23 @@
     "title": "Homepage",
     "fields": [
         {
+            "key": "field_5f57d3d98180c",
+            "label": "Homepage Hero Feature",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The featured exhibition that appears at the top of the homepage can be set under <strong>Exhibition --> <a href=\"edit.php?post_type=exhibition&page=acf-options-exhibition-options\">Exhibition Options<\/a>.<\/strong> Once you select the exhibition to feature, you can edit its landing page and its appearance on the homepage by selecting it from the <strong><a href=\"edit.php?post_type=exhibition\">All exhibitions list<\/a><\/strong> and revealing the “Featured exhibition options“ edit area.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
             "key": "field_5f3c14b726e8e",
             "label": "Homepage Content Sections",
             "name": "flexible_homepage_content_sections",
@@ -31,7 +48,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -55,7 +72,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "75",
                                 "class": "",
                                 "id": ""
                             },
@@ -130,10 +147,10 @@
                         },
                         {
                             "key": "field_5f3c8684b414f",
-                            "label": "Custom Section Content Repeater",
+                            "label": "Custom Section Content",
                             "name": "custom_section_content_repeater",
                             "type": "repeater",
-                            "instructions": "",
+                            "instructions": "You can add up to 2 columns of content in this section.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -145,7 +162,7 @@
                             "min": 0,
                             "max": 2,
                             "layout": "row",
-                            "button_label": "",
+                            "button_label": "Add Content Column",
                             "sub_fields": [
                                 {
                                     "key": "field_5f3c86bdb4150",
@@ -161,7 +178,8 @@
                                         "id": ""
                                     },
                                     "clone": [
-                                        "group_5dc09652d64a3"
+                                        "field_5dc0965e09e6c",
+                                        "field_5dc0967d07644"
                                     ],
                                     "display": "seamless",
                                     "layout": "block",
@@ -186,7 +204,7 @@
                             "name": "custom_carousel_section_title",
                             "type": "text",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -201,10 +219,10 @@
                         },
                         {
                             "key": "field_5f3c98f226d97",
-                            "label": "Custom Carousel Section Repeater",
+                            "label": "Custom Carousel Content",
                             "name": "custom_carousel_section_repeater",
                             "type": "repeater",
-                            "instructions": "",
+                            "instructions": "Add items to your custom carousel. You can choose to feature existing site content or create a carousel card from scratch by checking the “Custom carousel card” checkbox below",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -220,7 +238,7 @@
                             "sub_fields": [
                                 {
                                     "key": "field_5f3ca2d1ab6fc",
-                                    "label": "Is Custom Content",
+                                    "label": "Custom carousel card?",
                                     "name": "custom_carousel_section_is_custom_content",
                                     "type": "true_false",
                                     "instructions": "",
@@ -231,7 +249,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "message": "",
+                                    "message": "Yes, create new content that does not exist on the site",
                                     "default_value": 0,
                                     "ui": 0,
                                     "ui_on_text": "",
@@ -239,7 +257,7 @@
                                 },
                                 {
                                     "key": "field_5f3c991526d98",
-                                    "label": "Custom Carousel Section Content",
+                                    "label": "Create a Custom Carousel Card",
                                     "name": "custom_carousel_section_content",
                                     "type": "clone",
                                     "instructions": "",
@@ -268,7 +286,7 @@
                                 },
                                 {
                                     "key": "field_5f3c99781414b",
-                                    "label": "Custom Carousel Link",
+                                    "label": "Link",
                                     "name": "custom_carousel_link",
                                     "type": "link",
                                     "instructions": "",
@@ -291,7 +309,7 @@
                                 },
                                 {
                                     "key": "field_5f3cab8ede41a",
-                                    "label": "Custom Carousel Section Post",
+                                    "label": "Choose From Existing Content:",
                                     "name": "custom_carousel_section_post",
                                     "type": "relationship",
                                     "instructions": "",
@@ -314,7 +332,9 @@
                                         "post",
                                         "event",
                                         "exhibition",
-                                        "page"
+                                        "page",
+                                        "publication",
+                                        "product"
                                     ],
                                     "taxonomy": "",
                                     "filters": [
@@ -344,7 +364,7 @@
                             "name": "events_section_title",
                             "type": "text",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -374,7 +394,7 @@
                             "min": 0,
                             "max": 3,
                             "layout": "row",
-                            "button_label": "",
+                            "button_label": "Add Event",
                             "sub_fields": [
                                 {
                                     "key": "field_59e90a516bc2c",
@@ -629,7 +649,7 @@
                             "label": "Recommendation Sources",
                             "name": "about_section_recommendations_repeater",
                             "type": "repeater",
-                            "instructions": "",
+                            "instructions": "Note that images that work\/look best in this section are white PNGs with transparencies",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -703,7 +723,7 @@
                             "label": "Blog Section Title",
                             "name": "blog_section_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Note, ten latest blog entries are automatically displayed in this section",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -751,7 +771,7 @@
                             "label": "Exhibitions carousel",
                             "name": "featured_carousel_repeater",
                             "type": "repeater",
-                            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note, that events or exhibitions with a defined end date will be automatically removed from the carousel after their end date.",
+                            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note that events or exhibitions with defined end-dates will be automatically removed from the carousel after their end-date.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -763,7 +783,7 @@
                             "min": 0,
                             "max": 0,
                             "layout": "row",
-                            "button_label": "",
+                            "button_label": "Add Item",
                             "sub_fields": [
                                 {
                                     "key": "field_59291e3fa8664",
@@ -846,5 +866,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1599523655
+    "modified": 1599592172
 }
