@@ -279,6 +279,20 @@ add_filter('acf/settings/load_json', function($paths) {
     return $paths;
 });
 //***************************************************************//
+// SET UP OPTIONS PAGES //////////////////////////////////////////
+//Add options page
+function register_acf_options_pages()
+{
+	if (function_exists('acf_add_options_page')) {
+		// add sub page for mailchimp settings
+		acf_add_options_sub_page(array('page_title' => 'Emma API Settings', 'menu_title' => 'Emma API Settings', 'menu_slug' => 'emma-api-settings','parent_slug'   => 'options-general.php','capability' => 'manage_options', 'redirect' => false));
+	}
+}
+// Hook into acf initialization.
+add_action('acf/init', 'register_acf_options_pages');
+//END SET UP OPTIONS PAGES
+//***************************************************************//
+//***************************************************************//
 // FORMIDDABLE CALL FRONT END CSS WHEN FORM IS SET AND IF FORM HAS ERRORS ////////////////////////////////
 // Remove form style
 function mjh_dequeue_formiddable_frontend_css() {

@@ -1,0 +1,100 @@
+{
+    "key": "group_5f590b7574a3a",
+    "title": "Emma API Settings",
+    "fields": [
+        {
+            "key": "field_5f590b7b35850",
+            "label": "Account Id",
+            "name": "emma_account_id",
+            "type": "text",
+            "instructions": "Account id found at https:\/\/settings.e2ma.net\/profile\/api-key",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f590b8735851",
+            "label": "Public Api Key",
+            "name": "emma_public_api_key",
+            "type": "text",
+            "instructions": "Public Key found at https:\/\/settings.e2ma.net\/profile\/api-key",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f590bac35852",
+            "label": "Private Api Key",
+            "name": "emma_private_api_key",
+            "type": "text",
+            "instructions": "Private key generated and shown once on creation at https:\/\/settings.e2ma.net\/profile\/api-key",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f590bca56b27",
+            "label": "Groups",
+            "name": "emma_groups",
+            "type": "text",
+            "instructions": "Comma separated list of Emma group ids to subscribe members on signup",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "emma-api-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1599671597
+}
