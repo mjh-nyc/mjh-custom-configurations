@@ -297,7 +297,6 @@ add_action('acf/init', 'register_acf_options_pages');
 // Remove form style
 function mjh_dequeue_formiddable_frontend_css() {
 	wp_dequeue_style( 'formidable' );
-	wp_dequeue_style( 'frm_fonts' );
 }
 add_action( 'wp_print_styles', 'mjh_dequeue_formiddable_frontend_css', 100 );
 
@@ -314,8 +313,8 @@ add_filter('frm_invalid_error_message', 'mjh_enqueue_formiddable_invalid_error_m
 
 function mjh_enqueue_formiddable_scripts(){
 	$upload_dir = wp_upload_dir();
-	wp_enqueue_style( 'mjh_formidable', $upload_dir['baseurl'] .  '/formidable/css/formidablepro.css' );
-	wp_enqueue_style( 'mjh_frm_fonts', plugins_url() .  '/formidable-pro/css/frm_fonts.css' );
+	wp_enqueue_style('formidable');
+	//wp_enqueue_style( 'mjh_formidable', $upload_dir['baseurl'] .  '/formidable/css/formidablepro.css' );
 }
 
 // Set title to form for screen reader
