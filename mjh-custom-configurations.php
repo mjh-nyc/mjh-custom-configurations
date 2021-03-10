@@ -298,18 +298,18 @@ add_action('acf/init', 'register_acf_options_pages');
 function mjh_dequeue_formiddable_frontend_css() {
 	wp_dequeue_style( 'formidable' );
 }
-add_action( 'wp_print_styles', 'mjh_dequeue_formiddable_frontend_css', 100 );
+//add_action( 'wp_print_styles', 'mjh_dequeue_formiddable_frontend_css', 100 );
 
 function mjh_enqueue_formiddable_display_form_action($params, $fields, $form){
 	mjh_enqueue_formiddable_scripts();
 }
-add_action('frm_display_form_action', 'mjh_enqueue_formiddable_display_form_action', 100, 3);
+//add_action('frm_display_form_action', 'mjh_enqueue_formiddable_display_form_action', 100, 3);
 
 function mjh_enqueue_formiddable_invalid_error_message( $invalid_msg, $args ) {
 	mjh_enqueue_formiddable_scripts();
 	return $invalid_msg;
 }
-add_filter('frm_invalid_error_message', 'mjh_enqueue_formiddable_invalid_error_message', 10, 2);
+//add_filter('frm_invalid_error_message', 'mjh_enqueue_formiddable_invalid_error_message', 10, 2);
 
 function mjh_enqueue_formiddable_scripts(){
 	$upload_dir = wp_upload_dir();
