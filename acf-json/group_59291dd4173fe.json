@@ -392,7 +392,7 @@
                             },
                             "collapsed": "",
                             "min": 0,
-                            "max": 3,
+                            "max": 6,
                             "layout": "row",
                             "button_label": "Add Event",
                             "sub_fields": [
@@ -744,15 +744,15 @@
                 "layout_5f3c2e9f9863c": {
                     "key": "layout_5f3c2e9f9863c",
                     "name": "exhibitions_section",
-                    "label": "Exhibitions Section",
+                    "label": "Exhibitions & Featured Content Section ",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5f3c2e9f9863d",
-                            "label": "Exhibitions Section Title",
+                            "label": "Exhibitions & Featured Content Section Title",
                             "name": "exhibitions_section_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Default header can be overwritten per carousel item if set below.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -768,10 +768,10 @@
                         },
                         {
                             "key": "field_59291deda8663",
-                            "label": "Exhibitions carousel",
+                            "label": "Carousel",
                             "name": "featured_carousel_repeater",
                             "type": "repeater",
-                            "instructions": "Select exhibitions or events you would like to feature on the homepage. Note that events or exhibitions with defined end-dates will be automatically removed from the carousel after their end-date.",
+                            "instructions": "Select exhibitions, events or other content you would like to feature on the homepage. Note that events or exhibitions with defined end-dates will be automatically removed from the carousel after their end-date.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -779,7 +779,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
+                            "collapsed": "field_59291e3fa8664",
                             "min": 0,
                             "max": 0,
                             "layout": "row",
@@ -800,9 +800,13 @@
                                     },
                                     "post_type": [
                                         "exhibition",
-                                        "event"
+                                        "event",
+                                        "post",
+                                        "page",
+                                        "testimony",
+                                        "publication"
                                     ],
-                                    "taxonomy": [],
+                                    "taxonomy": "",
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "return_format": "id",
@@ -866,5 +870,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1617220171
+    "modified": 1623261098
 }
