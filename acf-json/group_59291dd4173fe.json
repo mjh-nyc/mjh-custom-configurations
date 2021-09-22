@@ -33,6 +33,114 @@
                 "id": ""
             },
             "layouts": {
+                "layout_6149fc8f638ac": {
+                    "key": "layout_6149fc8f638ac",
+                    "name": "hero_area_slideshow",
+                    "label": "Hero Area Slideshow",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6149fdeca443e",
+                            "label": "Hero area features collection",
+                            "name": "hero_area_features_collection",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_6149fccb638ae",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add hero area feature",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6149fcb3638ad",
+                                    "label": "Hero area image",
+                                    "name": "hero_area_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6149fccb638ae",
+                                    "label": "Heading",
+                                    "name": "hero_area_image_title",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 7,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6149fcd4638af",
+                                    "label": "Description (optional)",
+                                    "name": "hero_area_image_description",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 7,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6149fcea638b0",
+                                    "label": "Button link",
+                                    "name": "hero_area_image_button_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
                 "layout_5f3c14e7ddd93": {
                     "key": "layout_5f3c14e7ddd93",
                     "name": "special_feature_section",
@@ -870,5 +978,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1623261098
+    "modified": 1632241865
 }
