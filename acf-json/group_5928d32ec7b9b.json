@@ -17,16 +17,15 @@
             },
             "choices": {
                 "On View": "On View",
-                "Collection": "Collection"
+                "Collection": "Collection",
+                "Coming Soon": "Coming Soon"
             },
-            "default_value": [
-                "On View"
-            ],
+            "default_value": "On View",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
-            "ajax": 0,
             "return_format": "value",
+            "ajax": 0,
             "placeholder": ""
         },
         {
@@ -300,7 +299,7 @@
         "comments",
         "categories"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1557181456
+    "modified": 1631904496
 }
