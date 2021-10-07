@@ -335,10 +335,4 @@ function mjh_dequeue_flowpaper_frontend_css() {
 add_action( 'wp_print_styles', 'mjh_dequeue_flowpaper_frontend_css', 100 );
 //END FLOWPAPER REMOVE LITLY
 //***************************************************************//
-
-//***************************************************************//
-// DISABLE GUTENBURG BLOCK EDITOR ////////////////////////////////
-add_filter('use_block_editor_for_post', '__return_false', 10);
-//END DISABLE GUTENBURG BLOCK EDITOR
-//***************************************************************//
 ?>
