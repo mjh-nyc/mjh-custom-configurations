@@ -335,4 +335,10 @@ function mjh_dequeue_flowpaper_frontend_css() {
 add_action( 'wp_print_styles', 'mjh_dequeue_flowpaper_frontend_css', 100 );
 //END FLOWPAPER REMOVE LITLY
 //***************************************************************//
+
+//***************************************************************//
+// DISABLE ACF MENU LINK  ////////////////////////////////
+add_filter('acf/settings/show_admin', '__return_false');
+//END DISABLE ACF MENU LINK
+//***************************************************************//
 ?>
