@@ -36,6 +36,13 @@
                 "operator": "==",
                 "value": "views\/template-core.blade.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 12,
@@ -43,10 +50,8 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "custom_fields"
-    ],
-    "active": 1,
+    "hide_on_screen": "",
+    "active": true,
     "description": "",
-    "modified": 1547238543
+    "modified": 1640286461
 }
