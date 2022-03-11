@@ -220,6 +220,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_622b69bad4b0d",
+            "label": "Event Detail Callout",
+            "name": "event_detail_callout",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59308d698eaba",
             "label": "Event pricing",
             "name": "event_pricing",
@@ -626,5 +645,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646075321
+    "modified": 1647012363
 }
