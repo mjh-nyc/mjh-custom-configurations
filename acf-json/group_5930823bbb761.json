@@ -221,10 +221,10 @@
         },
         {
             "key": "field_622b69bad4b0d",
-            "label": "Event Detail Callout",
-            "name": "event_detail_callout",
+            "label": "Event Pricing Text",
+            "name": "event_pricing_text",
             "type": "text",
-            "instructions": "",
+            "instructions": "Open text to detail pricing",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -245,7 +245,14 @@
             "type": "repeater",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_622b69bad4b0d",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -645,5 +652,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647012363
+    "modified": 1647024939
 }
