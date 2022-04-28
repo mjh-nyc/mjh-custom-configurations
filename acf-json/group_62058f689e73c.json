@@ -1,0 +1,109 @@
+{
+    "key": "group_62058f689e73c",
+    "title": "Curated Taxonomy",
+    "fields": [
+        {
+            "key": "field_6205908ba0970",
+            "label": "Which taxonomy do you want to feature?",
+            "name": "taxonomy_feature",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "categories": "Categories",
+                "tags": "Tags"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_620591093185a",
+            "label": "Categories",
+            "name": "taxonomy_categories",
+            "type": "taxonomy",
+            "instructions": "Select taxonomy items to show",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6205908ba0970",
+                        "operator": "==",
+                        "value": "categories"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0
+        },
+        {
+            "key": "field_6205913f917f5",
+            "label": "Tags",
+            "name": "taxonomy_tags",
+            "type": "taxonomy",
+            "instructions": "Select taxonomy items to show",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6205908ba0970",
+                        "operator": "==",
+                        "value": "tags"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651148786
+}

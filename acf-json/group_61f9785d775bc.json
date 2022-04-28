@@ -1,0 +1,100 @@
+{
+    "key": "group_61f9785d775bc",
+    "title": "Featured Posts",
+    "fields": [
+        {
+            "key": "field_61fe932aaaad5",
+            "label": "Header",
+            "name": "posts_header",
+            "type": "text",
+            "instructions": "Enter the header to appear above your featured posts, for example “Featured Category: Our Story.” Then, select one taxonomy below and choose the posts you wish to feature.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61f97ecb473bd",
+            "label": "Posts to Feature",
+            "name": "posts_by_category",
+            "type": "relationship",
+            "instructions": "Select a category or topic from which to choose your featured posts. Please only pick one category or topic then choose posts from within that taxonomy.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 4,
+            "return_format": "object"
+        },
+        {
+            "key": "field_61f97e0655303",
+            "label": "Background Color",
+            "name": "posts_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6205426010898",
+            "label": "View More Link",
+            "name": "posts_view_more_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651149024
+}
