@@ -3,6 +3,42 @@
     "title": "Curated Taxonomy",
     "fields": [
         {
+            "key": "field_626c08922d1ea",
+            "label": "Title",
+            "name": "taxonomy_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Explore More Stories:",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_626c08e03ec89",
+            "label": "Box Color",
+            "name": "taxonomy_box_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_6205908ba0970",
             "label": "Which taxonomy do you want to feature?",
             "name": "taxonomy_feature",
@@ -92,7 +128,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": ""
+                "value": "acf\/curated-taxonomy"
             }
         ]
     ],
@@ -105,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651148786
+    "modified": 1651247379
 }

@@ -83,7 +83,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": ""
+                "value": "acf\/featured-posts"
             }
         ]
     ],
@@ -96,5 +96,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651149024
+    "modified": 1651246924
 }
