@@ -243,28 +243,28 @@ function register_testimony_category(){
 function mjh_change_post_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Blog &amp; Press';
-    $submenu['edit.php'][5][0] = 'Blog &amp; Press';
-    $submenu['edit.php'][10][0] = 'Add Blog &amp; Press';
-    $submenu['edit.php'][16][0] = 'Blog &amp; Press Tags';
+    $menu[5][0] = 'Blog & Press';
+    $submenu['edit.php'][5][0] = 'Blog & Press';
+    $submenu['edit.php'][10][0] = 'Add Blog & Press';
+    $submenu['edit.php'][16][0] = 'Blog & Press Tags';
 }
 add_action( 'admin_menu', 'mjh_change_post_label' );
 function mjh_change_post_object() {
     global $wp_post_types;
     $labels = &$wp_post_types['post']->labels;
-    $labels->name = 'Blog &amp; Press';
-    $labels->singular_name = 'Blog &amp; Press';
-    $labels->add_new = 'Add Blog &amp; Press';
-    $labels->add_new_item = 'Add Blog &amp; Press';
-    $labels->edit_item = 'Edit Blog &amp; Press';
-    $labels->new_item = 'Blog &amp; Press';
-    $labels->view_item = 'View Blog &amp; Press';
-    $labels->search_items = 'Search Blog &amp; Press';
-    $labels->not_found = 'No Blog &amp; Press found';
-    $labels->not_found_in_trash = 'No Blog &amp; Press Found in Trash';
-    $labels->all_items = 'All Blog &amp; Press';
-    $labels->menu_name = 'Blog &amp; Press';
-    $labels->name_admin_bar = 'Blog &amp; Press';
+    $labels->name = 'Blog & Press';
+    $labels->singular_name = 'Blog & Press';
+    $labels->add_new = 'Add Blog & Press';
+    $labels->add_new_item = 'Add Blog & Press';
+    $labels->edit_item = 'Edit Blog & Press';
+    $labels->new_item = 'Blog & Press';
+    $labels->view_item = 'View Blog & Press';
+    $labels->search_items = 'Search Blog & Press';
+    $labels->not_found = 'No Blog & Press found';
+    $labels->not_found_in_trash = 'No Blog & Press Found in Trash';
+    $labels->all_items = 'All Blog & Press';
+    $labels->menu_name = 'Blog & Press';
+    $labels->name_admin_bar = 'Blog & Press';
 }
 add_action( 'init', 'mjh_change_post_object' );
 
