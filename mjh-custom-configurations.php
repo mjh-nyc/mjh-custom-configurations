@@ -341,4 +341,76 @@ add_action( 'wp_print_styles', 'mjh_dequeue_flowpaper_frontend_css', 100 );
 //add_filter('acf/settings/show_admin', '__return_false');
 //END DISABLE ACF MENU LINK
 //***************************************************************//
+
+//***************************************************************//
+// REST API FOR NAVIGATION ////////////////////////////////
+// Create custom rest api endpoint route for mjh navigation
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'wp/v2', 'mjh-navigation/(?P<primary_nav_current_title>[a-zA-Z0-9-]+)', array(
+        'methods'             => 'GET',
+        'callback'            => 'mjh_generate_navigation',
+        'args' => array(
+            'primary_nav_current_title' => array(
+                'validate_callback' => function ($param, $request, $key) {
+                    return is_string($param);
+                }
+            ),
+        ),
+        'permission_callback' => '__return_true',
+    ));
+} );
+// Callback function for the custom rest api endpoint
+function mjh_generate_navigation($request) {
+    $paramHash = array();
+    //Apply filter to set current menu class based on page title
+    if(!empty($request['primary_nav_current_title'])) {
+        add_filter('nav_menu_css_class', array(new MJH_Current_Nav_Class( $request['primary_nav_current_title'] ),'mjh_current_nav_class'), 10, 2);
+    }
+    //Generate markup for navigation
+    $paramHash['primary_navigation'] = wp_nav_menu(array('echo'=> false,'menu'=> 'Primary navigation'));
+    //Remove filter since only needed in primary navigation
+    if(!empty($request['primary_nav_current_title'])) {
+        remove_filter('nav_menu_css_class', 'mjh_current_nav_class');
+    }
+    //Generate markup for navigation
+    $paramHash['mini_top_navigation'] = wp_nav_menu(array('echo'=> false,'menu'=> 'Mini Top Navigation'));
+    //Generate markup for navigation
+    $paramHash['button_top_navigation'] = wp_nav_menu(array('echo'=> false,'menu'=> 'Button Top Navigation'));
+    return $paramHash;
+}
+// Callback function for the nav_menu_css_class filter. Object created to be able to pass parameter
+class MJH_Current_Nav_Class
+{
+    /**
+     * Page title to check for adding current css classes.
+     *
+     * @type string.
+     */
+    private $primary_nav_current_title;
+
+    /**
+     * Class constructor, pass parameters.
+     *
+     * @param  string $primary_nav_current_title
+     */
+    public function __construct( $primary_nav_current_title )
+    {
+        $this->primary_nav_current_title = $primary_nav_current_title;
+    }
+    /**
+     * Call back function to be executed for `nav_menu_css_class` filter
+     *
+     * @param  array $classes
+     * @param  object $menu_item
+     */
+    public function mjh_current_nav_class( $classes, $menu_item ) {
+        if ( $menu_item->type == 'custom' && strtolower($menu_item->title) == $this->primary_nav_current_title ) {
+            $classes[] = 'current-menu-ancestor';
+            $classes[] = 'current-menu-parent';
+        }
+        return $classes;
+    }
+}
+//END REST API FOR NAVIGATION
+//***************************************************************//
 ?>
