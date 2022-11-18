@@ -41,6 +41,33 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_6377e82b89717",
+            "label": "Filter Search Field by Blog",
+            "name": "taxonomy_search_blog_filter_bool",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627bc5525e746",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes, filter search field by blog",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_626c08e03ec89",
             "label": "Box Color",
             "name": "taxonomy_box_color",
@@ -179,5 +206,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652278750
+    "modified": 1668802766
 }
