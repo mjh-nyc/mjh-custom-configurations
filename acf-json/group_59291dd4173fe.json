@@ -152,7 +152,31 @@
                             "label": "Special feature image",
                             "name": "special_feature_image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "This image will appear on the left side of the main content. Best suitable for photographs.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".png,.gif,.jpg,.jpeg"
+                        },
+                        {
+                            "key": "field_63dac10839b13",
+                            "label": "Special feature content image",
+                            "name": "special_feature_image_content",
+                            "type": "image",
+                            "instructions": "Image added here will appear above the title in the main content area of the feature.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -180,7 +204,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "75",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -206,7 +230,7 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "basic",
-                            "media_upload": 0,
+                            "media_upload": 1,
                             "delay": 0
                         },
                         {
@@ -223,6 +247,81 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_63dac4391c1a2",
+                            "label": "Special feature design options",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Set the background and text colors. <a href=\"https:\/\/webaim.org\/resources\/contrastchecker\/\" target=\"_blank\">Please check any custom colors<\/a> to ensure correct contrast ratios to meet ADA accessibility standards and to avoid potential <a href=\"https:\/\/www.w3.org\/WAI\/standards-guidelines\/wcag\/\" target=\"_blank\">WCAG<\/a> compliance issues.",
+                            "new_lines": "",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_63dac2d21c1a1",
+                            "label": "Special feature background color",
+                            "name": "special_feature_background_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33.33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_63dac4951c1a3",
+                            "label": "Special feature text color",
+                            "name": "special_feature_text_color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33.33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#4A4A4A",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_63dac53d0c65b",
+                            "label": "Special feature layout",
+                            "name": "special_feature_layout",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33.33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Content width",
+                                "Full page width"
+                            ],
+                            "allow_null": 1,
+                            "other_choice": 0,
+                            "default_value": 0,
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
                         }
                     ],
                     "min": "",
@@ -978,5 +1077,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1632241865
+    "show_in_rest": 0,
+    "modified": 1675281810
 }
