@@ -1,8 +1,8 @@
 <?php 
 /*
-Plugin Name: Musuem of Jewish Heritage Custom Configurations
-Description: This plugin registers Musuem of Jewish Heritage custom configurations.
-Version: 1.0.0
+Plugin Name: Museum of Jewish Heritage Custom Configurations
+Description: This plugin registers Museum of Jewish Heritage custom configurations.
+Version: 1.7.6
 License: GPLv2
 */
 
@@ -29,6 +29,7 @@ function mjh_create_post_types() {
         'menu_icon' => 'dashicons-calendar-alt',
 		'has_archive' => true,
  		'public' => true,
+        'show_in_rest' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
 		'exclude_from_search' => false,
 		'capability_type' => 'post',
@@ -59,6 +60,7 @@ function mjh_create_post_types() {
         'menu_icon' => 'dashicons-book-alt',
         'has_archive' => true,
         'public' => true,
+        'show_in_rest' => true,
         'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
         'exclude_from_search' => false,
         'capability_type' => 'post',
@@ -88,6 +90,7 @@ function mjh_create_post_types() {
         'menu_icon' => 'dashicons-tickets-alt',
 		'has_archive' => true,
  		'public' => true,
+        'show_in_rest' => true,
 		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
 		'exclude_from_search' => false,
 		'capability_type' => 'post',
@@ -210,35 +213,6 @@ function register_testimony_category(){
 
     register_taxonomy( 'testimony_category', array( 'testimony' ), $args );
 }
-
-/*function register_exhibition_category(){
-	// Add new taxonomy, make it hierarchical (like categories)
-	$labels = array(
-		'name'              => _x( 'Exhibition Categories', 'taxonomy general name', 'sage' ),
-		'singular_name'     => _x( 'Exhibition Category', 'taxonomy singular name', 'sage' ),
-		'search_items'      => __( 'Search Exhibition Categories', 'sage' ),
-		'all_items'         => __( 'All Exhibition Categories', 'sage' ),
-		'parent_item'       => __( 'Parent Exhibition Category', 'sage' ),
-		'parent_item_colon' => __( 'Parent Exhibition Category:', 'sage' ),
-		'edit_item'         => __( 'Edit Exhibition Category', 'sage' ),
-		'update_item'       => __( 'Update Exhibition Category', 'sage' ),
-		'add_new_item'      => __( 'Add New Exhibition Category', 'sage' ),
-		'new_item_name'     => __( 'New Exhibition Category Name', 'sage' ),
-		'menu_name'         => __( 'Exhibition Category', 'sage' ),
-	);
-
-	$args = array(
-		'hierarchical'      => true,
-		'labels'            => $labels,
-		'show_ui'           => true,
-		'show_admin_column' => true,
-		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'exhibition-category' ),
-	);
-
-	register_taxonomy( 'exhibition_category', array( 'exhibition' ), $args );
-}*/
-
 // Change label of post to Blog & Press
 function mjh_change_post_label() {
     global $menu;
