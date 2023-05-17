@@ -3,6 +3,25 @@
     "title": "Learn More Global Footer",
     "fields": [
         {
+            "key": "field_64641936a227f",
+            "label": "Content footer display options",
+            "name": "global_footer_bool",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show content footer",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_64626b7f6e06b",
             "label": "Content",
             "name": "",
@@ -194,5 +213,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684172238
+    "modified": 1684281712
 }
