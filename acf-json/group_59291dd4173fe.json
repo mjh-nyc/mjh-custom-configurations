@@ -6,6 +6,7 @@
             "key": "field_5f57d3d98180c",
             "label": "Homepage Hero Feature",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -23,6 +24,7 @@
             "key": "field_5f3c14b726e8e",
             "label": "Homepage Content Sections",
             "name": "flexible_homepage_content_sections",
+            "aria-label": "",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -43,6 +45,7 @@
                             "key": "field_6149fdeca443e",
                             "label": "Hero area features collection",
                             "name": "hero_area_features_collection",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -62,6 +65,7 @@
                                     "key": "field_6149fcb3638ad",
                                     "label": "Hero area image",
                                     "name": "hero_area_image",
+                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -80,12 +84,14 @@
                                     "max_width": "",
                                     "max_height": "",
                                     "max_size": "",
-                                    "mime_types": ""
+                                    "mime_types": "",
+                                    "parent_repeater": "field_6149fdeca443e"
                                 },
                                 {
                                     "key": "field_6149fccb638ae",
                                     "label": "Heading",
                                     "name": "hero_area_image_title",
+                                    "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
@@ -99,12 +105,14 @@
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": 7,
-                                    "new_lines": ""
+                                    "new_lines": "",
+                                    "parent_repeater": "field_6149fdeca443e"
                                 },
                                 {
                                     "key": "field_6149fcd4638af",
                                     "label": "Description (optional)",
                                     "name": "hero_area_image_description",
+                                    "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
@@ -118,12 +126,14 @@
                                     "placeholder": "",
                                     "maxlength": "",
                                     "rows": 7,
-                                    "new_lines": ""
+                                    "new_lines": "",
+                                    "parent_repeater": "field_6149fdeca443e"
                                 },
                                 {
                                     "key": "field_6149fcea638b0",
                                     "label": "Button link",
                                     "name": "hero_area_image_button_link",
+                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -133,9 +143,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array"
+                                    "return_format": "array",
+                                    "parent_repeater": "field_6149fdeca443e"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -151,6 +163,7 @@
                             "key": "field_5e70ee85a7ce0",
                             "label": "Special feature image",
                             "name": "special_feature_image",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "This image will appear on the left side of the main content. Best suitable for photographs.",
                             "required": 0,
@@ -175,6 +188,7 @@
                             "key": "field_63dac10839b13",
                             "label": "Special feature content image",
                             "name": "special_feature_image_content",
+                            "aria-label": "",
                             "type": "image",
                             "instructions": "Image added here will appear above the title in the main content area of the feature.",
                             "required": 0,
@@ -199,6 +213,7 @@
                             "key": "field_5e70f011bebac",
                             "label": "Special feature title",
                             "name": "special_feature_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -218,6 +233,7 @@
                             "key": "field_5e70eed0a7ce1",
                             "label": "Special feature content",
                             "name": "special_feature_content",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -237,6 +253,7 @@
                             "key": "field_5e70eefea7ce2",
                             "label": "Special feature link",
                             "name": "special_feature_link",
+                            "aria-label": "",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -252,6 +269,7 @@
                             "key": "field_63dac4391c1a2",
                             "label": "Special feature design options",
                             "name": "",
+                            "aria-label": "",
                             "type": "message",
                             "instructions": "",
                             "required": 0,
@@ -269,6 +287,7 @@
                             "key": "field_63dac2d21c1a1",
                             "label": "Special feature background color",
                             "name": "special_feature_background_color",
+                            "aria-label": "",
                             "type": "color_picker",
                             "instructions": "",
                             "required": 0,
@@ -286,6 +305,7 @@
                             "key": "field_63dac4951c1a3",
                             "label": "Special feature text color",
                             "name": "special_feature_text_color",
+                            "aria-label": "",
                             "type": "color_picker",
                             "instructions": "",
                             "required": 0,
@@ -303,6 +323,7 @@
                             "key": "field_63dac53d0c65b",
                             "label": "Special feature layout",
                             "name": "special_feature_layout",
+                            "aria-label": "",
                             "type": "radio",
                             "instructions": "",
                             "required": 0,
@@ -337,6 +358,7 @@
                             "key": "field_5f3c245370418",
                             "label": "Custom Section Title",
                             "name": "custom_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -356,6 +378,7 @@
                             "key": "field_5f3c8684b414f",
                             "label": "Custom Section Content",
                             "name": "custom_section_content_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "You can add up to 2 columns of content in this section.",
                             "required": 0,
@@ -375,6 +398,7 @@
                                     "key": "field_5f3c86bdb4150",
                                     "label": "Custom Content",
                                     "name": "custom_content",
+                                    "aria-label": "",
                                     "type": "clone",
                                     "instructions": "",
                                     "required": 0,
@@ -391,9 +415,11 @@
                                     "display": "seamless",
                                     "layout": "block",
                                     "prefix_label": 0,
-                                    "prefix_name": 1
+                                    "prefix_name": 1,
+                                    "parent_repeater": "field_5f3c8684b414f"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -409,6 +435,7 @@
                             "key": "field_5f3c534648881",
                             "label": "Custom Carousel Section Title",
                             "name": "custom_carousel_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 1,
@@ -428,6 +455,7 @@
                             "key": "field_5f3c98f226d97",
                             "label": "Custom Carousel Content",
                             "name": "custom_carousel_section_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "Add items to your custom carousel. You can choose to feature existing site content or create a carousel card from scratch by checking the “Custom carousel card” checkbox below",
                             "required": 0,
@@ -441,12 +469,13 @@
                             "min": 0,
                             "max": 0,
                             "layout": "block",
-                            "button_label": "",
+                            "button_label": "Add Row",
                             "sub_fields": [
                                 {
                                     "key": "field_5f3ca2d1ab6fc",
                                     "label": "Custom carousel card?",
                                     "name": "custom_carousel_section_is_custom_content",
+                                    "aria-label": "",
                                     "type": "true_false",
                                     "instructions": "",
                                     "required": 0,
@@ -460,12 +489,14 @@
                                     "default_value": 0,
                                     "ui": 0,
                                     "ui_on_text": "",
-                                    "ui_off_text": ""
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_5f3c98f226d97"
                                 },
                                 {
                                     "key": "field_5f3c991526d98",
                                     "label": "Create a Custom Carousel Card",
                                     "name": "custom_carousel_section_content",
+                                    "aria-label": "",
                                     "type": "clone",
                                     "instructions": "",
                                     "required": 0,
@@ -479,7 +510,7 @@
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "75",
                                         "class": "",
                                         "id": ""
                                     },
@@ -487,14 +518,16 @@
                                         "group_5dc09652d64a3"
                                     ],
                                     "display": "group",
-                                    "layout": "block",
+                                    "layout": "row",
                                     "prefix_label": 0,
-                                    "prefix_name": 1
+                                    "prefix_name": 1,
+                                    "parent_repeater": "field_5f3c98f226d97"
                                 },
                                 {
                                     "key": "field_5f3c99781414b",
                                     "label": "Link",
                                     "name": "custom_carousel_link",
+                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -508,16 +541,18 @@
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "25",
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array"
+                                    "return_format": "array",
+                                    "parent_repeater": "field_5f3c98f226d97"
                                 },
                                 {
                                     "key": "field_5f3cab8ede41a",
                                     "label": "Choose From Existing Content:",
                                     "name": "custom_carousel_section_post",
+                                    "aria-label": "",
                                     "type": "relationship",
                                     "instructions": "",
                                     "required": 0,
@@ -551,9 +586,11 @@
                                     "elements": "",
                                     "min": "",
                                     "max": 1,
-                                    "return_format": "id"
+                                    "return_format": "id",
+                                    "parent_repeater": "field_5f3c98f226d97"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -569,6 +606,7 @@
                             "key": "field_5f3c161e9b657",
                             "label": "Events Section Title",
                             "name": "events_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 1,
@@ -588,6 +626,7 @@
                             "key": "field_59e90a516bc2a",
                             "label": "Featured events",
                             "name": "featured_events_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "Select events you would like to feature on the homepage events section. Note, that events with a defined end date will be automatically removed from the section after their end date.",
                             "required": 0,
@@ -607,6 +646,7 @@
                                     "key": "field_59e90a516bc2c",
                                     "label": "Event item",
                                     "name": "event_item",
+                                    "aria-label": "",
                                     "type": "post_object",
                                     "instructions": "",
                                     "required": 0,
@@ -623,9 +663,11 @@
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "return_format": "id",
-                                    "ui": 1
+                                    "ui": 1,
+                                    "parent_repeater": "field_59e90a516bc2a"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -641,6 +683,7 @@
                             "key": "field_5f3c16b3a4719",
                             "label": "Section Title",
                             "name": "about_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -660,6 +703,7 @@
                             "key": "field_5f47d60f0de32",
                             "label": "Museum Hours Information",
                             "name": "",
+                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -676,6 +720,7 @@
                             "key": "field_5f3eaeeb8e681",
                             "label": "Hours (Title)",
                             "name": "about_section_hours_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "Please note that the museum hours are set under Settings --> Museum Stats (Museum Schedule tab). The hours will be displayed under this title on the homepage.",
                             "required": 0,
@@ -695,6 +740,7 @@
                             "key": "field_5f3eaf2e8e682",
                             "label": "Special Instructions",
                             "name": "about_section_hours_copy",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "Include any special instructions for visitors regarding museum hours here",
                             "required": 0,
@@ -714,6 +760,7 @@
                             "key": "field_5f47d6ae0de33",
                             "label": "Visitor Information Links",
                             "name": "",
+                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -730,6 +777,7 @@
                             "key": "field_5f3eaf798e684",
                             "label": "Visitor Information (Title)",
                             "name": "about_section_visitor_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -749,6 +797,7 @@
                             "key": "field_5f3eb050e4430",
                             "label": "Visitor Information Links",
                             "name": "about_section_visitor_links_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "Note, the last link you create as part of this list will be styled as a button",
                             "required": 0,
@@ -762,12 +811,13 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Add Row",
                             "sub_fields": [
                                 {
                                     "key": "field_5f3eb093e4431",
                                     "label": "Link",
                                     "name": "about_section_visitor_links_link",
+                                    "aria-label": "",
                                     "type": "link",
                                     "instructions": "",
                                     "required": 0,
@@ -777,14 +827,17 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array"
+                                    "return_format": "array",
+                                    "parent_repeater": "field_5f3eb050e4430"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         },
                         {
                             "key": "field_5f47d7060de34",
                             "label": "Special Announcement Bar",
                             "name": "",
+                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -801,6 +854,7 @@
                             "key": "field_5f3e8bb742c61",
                             "label": "About Section Announcements",
                             "name": "about_section_announcements",
+                            "aria-label": "",
                             "type": "wysiwyg",
                             "instructions": "Manages the announcement messaging on the homepage.",
                             "required": 0,
@@ -820,6 +874,7 @@
                             "key": "field_5f47d7420de35",
                             "label": "Recommended By",
                             "name": "",
+                            "aria-label": "",
                             "type": "tab",
                             "instructions": "",
                             "required": 0,
@@ -836,6 +891,7 @@
                             "key": "field_5f3e8ecc327cf",
                             "label": "Recommendations Title",
                             "name": "about_section_recommendation_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -855,6 +911,7 @@
                             "key": "field_5f3e8f41327d0",
                             "label": "Recommendation Sources",
                             "name": "about_section_recommendations_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "Note that images that work\/look best in this section are white PNGs with transparencies",
                             "required": 0,
@@ -868,12 +925,13 @@
                             "min": 0,
                             "max": 0,
                             "layout": "table",
-                            "button_label": "",
+                            "button_label": "Add Row",
                             "sub_fields": [
                                 {
                                     "key": "field_5f3e8f83327d2",
                                     "label": "Icon or Logo Image",
                                     "name": "about_section_recommendation_icon",
+                                    "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -892,12 +950,14 @@
                                     "max_width": "",
                                     "max_height": "",
                                     "max_size": "",
-                                    "mime_types": "jpg,png,gif"
+                                    "mime_types": "jpg,png,gif",
+                                    "parent_repeater": "field_5f3e8f41327d0"
                                 },
                                 {
                                     "key": "field_5f3e8f5b327d1",
                                     "label": "Source Name",
                                     "name": "about_section_recommendation_title",
+                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -911,9 +971,11 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5f3e8f41327d0"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
@@ -929,6 +991,7 @@
                             "key": "field_5f3c2be7db46c",
                             "label": "Blog Section Title",
                             "name": "blog_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "Note, ten latest blog entries are automatically displayed in this section",
                             "required": 0,
@@ -958,6 +1021,7 @@
                             "key": "field_5f3c2e9f9863d",
                             "label": "Exhibitions & Featured Content Section Title",
                             "name": "exhibitions_section_title",
+                            "aria-label": "",
                             "type": "text",
                             "instructions": "Default header can be overwritten per carousel item if set below.",
                             "required": 0,
@@ -977,6 +1041,7 @@
                             "key": "field_59291deda8663",
                             "label": "Carousel",
                             "name": "featured_carousel_repeater",
+                            "aria-label": "",
                             "type": "repeater",
                             "instructions": "Select exhibitions, events or other content you would like to feature on the homepage. Note that events or exhibitions with defined end-dates will be automatically removed from the carousel after their end-date.",
                             "required": 0,
@@ -996,6 +1061,7 @@
                                     "key": "field_59291e3fa8664",
                                     "label": "Carousel item",
                                     "name": "carousel_item",
+                                    "aria-label": "",
                                     "type": "post_object",
                                     "instructions": "",
                                     "required": 0,
@@ -1017,12 +1083,14 @@
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "return_format": "id",
-                                    "ui": 1
+                                    "ui": 1,
+                                    "parent_repeater": "field_59291deda8663"
                                 },
                                 {
                                     "key": "field_592e2b5bb1e00",
                                     "label": "Header",
                                     "name": "carousel_item_header",
+                                    "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1036,18 +1104,20 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "maxlength": ""
+                                    "maxlength": "",
+                                    "parent_repeater": "field_59291deda8663"
                                 }
-                            ]
+                            ],
+                            "rows_per_page": 20
                         }
                     ],
                     "min": "",
                     "max": "1"
                 }
             },
-            "button_label": "Add Section",
             "min": 1,
-            "max": ""
+            "max": "",
+            "button_label": "Add Section"
         }
     ],
     "location": [
@@ -1078,5 +1148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675281810
+    "modified": 1684605694
 }
