@@ -6,6 +6,7 @@
             "key": "field_62170f4a5a841",
             "label": "Event Attendance Type",
             "name": "event_attendance_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -31,6 +32,7 @@
             "key": "field_594bf676f1376",
             "label": "Event type",
             "name": "event_type",
+            "aria-label": "",
             "type": "radio",
             "instructions": "",
             "required": 1,
@@ -56,6 +58,7 @@
             "key": "field_594c0dbe0f949",
             "label": "Event recurrence",
             "name": "event_recurrence",
+            "aria-label": "",
             "type": "text",
             "instructions": "Recurring events will be pushed to the top of the listing. For recurring events, date and time entry fields are not available. Please specify the recurrence in the field provided, include complex recurrence rules within the body of the event.",
             "required": 0,
@@ -83,6 +86,7 @@
             "key": "field_5930950a5dfdb",
             "label": "Event start date",
             "name": "event_start_date",
+            "aria-label": "",
             "type": "date_picker",
             "instructions": "",
             "required": 0,
@@ -115,6 +119,7 @@
             "key": "field_593095baddabe",
             "label": "Event end date",
             "name": "event_end_date",
+            "aria-label": "",
             "type": "date_picker",
             "instructions": "",
             "required": 0,
@@ -140,6 +145,7 @@
             "key": "field_593874563bc88",
             "label": "Event start time",
             "name": "event_start_time",
+            "aria-label": "",
             "type": "time_picker",
             "instructions": "",
             "required": 0,
@@ -147,8 +153,8 @@
                 [
                     {
                         "field": "field_594bf676f1376",
-                        "operator": "==",
-                        "value": "onetime"
+                        "operator": "!=",
+                        "value": "recurring"
                     }
                 ]
             ],
@@ -164,6 +170,7 @@
             "key": "field_593874ae3bc89",
             "label": "Event end time",
             "name": "event_end_time",
+            "aria-label": "",
             "type": "time_picker",
             "instructions": "",
             "required": 0,
@@ -188,6 +195,7 @@
             "key": "field_621c5b1819a18",
             "label": "Event Timezone",
             "name": "event_timezone",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -223,6 +231,7 @@
             "key": "field_622b69bad4b0d",
             "label": "Event Pricing Text",
             "name": "event_pricing_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "Open text to detail pricing",
             "required": 0,
@@ -242,6 +251,7 @@
             "key": "field_59308d698eaba",
             "label": "Event pricing",
             "name": "event_pricing",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -268,6 +278,7 @@
                     "key": "field_59308da68eabc",
                     "label": "Event price label",
                     "name": "event_price_label",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -281,12 +292,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_59308d698eaba"
                 },
                 {
                     "key": "field_59308d828eabb",
                     "label": "Event price",
                     "name": "event_price",
+                    "aria-label": "",
                     "type": "number",
                     "instructions": "",
                     "required": 0,
@@ -302,12 +315,14 @@
                     "append": "",
                     "min": "",
                     "max": "",
-                    "step": ""
+                    "step": "",
+                    "parent_repeater": "field_59308d698eaba"
                 },
                 {
                     "key": "field_5a5cf6628f0b7",
                     "label": "Event Price Alternate",
                     "name": "event_price_alternate",
+                    "aria-label": "",
                     "type": "select",
                     "instructions": "Alternate event pricing",
                     "required": 0,
@@ -323,18 +338,20 @@
                         "Free, advance reservations required": "Free, advance reservations required",
                         "Other": "Other"
                     },
-                    "default_value": [],
+                    "default_value": false,
                     "allow_null": 1,
                     "multiple": 0,
                     "ui": 0,
                     "ajax": 0,
                     "return_format": "value",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_59308d698eaba"
                 },
                 {
                     "key": "field_5a5cf6ec7b39b",
                     "label": "Event Price Alternate Other",
                     "name": "event_price_alternate_other",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "Free text option for other alternate pricing",
                     "required": 0,
@@ -356,14 +373,17 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_59308d698eaba"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5930965396353",
             "label": "Event ticket URL",
             "name": "event_ticket_url",
+            "aria-label": "",
             "type": "url",
             "instructions": "URL for the ticket purchasing application for this event",
             "required": 0,
@@ -380,6 +400,7 @@
             "key": "field_594d28f343918",
             "label": "Event ticket button label",
             "name": "event_ticket_button_label",
+            "aria-label": "",
             "type": "text",
             "instructions": "Enter your custom ticket button label",
             "required": 0,
@@ -399,6 +420,7 @@
             "key": "field_621d1d7768305",
             "label": "Event Additional Detail",
             "name": "event_additional_detail",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -418,6 +440,7 @@
             "key": "field_593190acc1942",
             "label": "Does this event have a specific location?",
             "name": "event_has_location",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -437,6 +460,7 @@
             "key": "field_5a5944dd99c19",
             "label": "Is this a live event?",
             "name": "event_live",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -456,6 +480,7 @@
             "key": "field_5930a1b7ff982",
             "label": "Event location",
             "name": "event_location",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -483,6 +508,7 @@
             "key": "field_593082468eab5",
             "label": "Event street",
             "name": "event_street",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -510,6 +536,7 @@
             "key": "field_593087d68eab6",
             "label": "Event secondary street",
             "name": "event_secondary_street",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -537,6 +564,7 @@
             "key": "field_59308d048eab7",
             "label": "Event city",
             "name": "event_city",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -564,6 +592,7 @@
             "key": "field_59308d3c8eab8",
             "label": "Event state",
             "name": "event_state",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -591,6 +620,7 @@
             "key": "field_59308d5a8eab9",
             "label": "Event zip code",
             "name": "event_zip_code",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -618,6 +648,7 @@
             "key": "field_6219389eadea4",
             "label": "Event Museum Membership Callout",
             "name": "event_museum_membership_callout",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "Check to display the museum membership callout",
             "required": 0,
@@ -652,5 +683,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647024939
+    "modified": 1686198562
 }
