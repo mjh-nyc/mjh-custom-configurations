@@ -152,6 +152,7 @@ function register_event_category(){
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
+        'show_in_rest'      => true,
 		'rewrite'           => array( 'slug' => 'event-category' ),
 	);
 
@@ -180,6 +181,7 @@ function register_publication_category(){
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
+        'show_in_rest'      => true,
         'rewrite'           => array( 'slug' => 'publication-category' ),
     );
 
@@ -208,6 +210,7 @@ function register_testimony_category(){
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
+        'show_in_rest'      => true,
         'rewrite'           => array( 'slug' => 'testimony-category' ),
     );
 
