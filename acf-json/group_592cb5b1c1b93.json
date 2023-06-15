@@ -76,13 +76,6 @@
                 "operator": "==",
                 "value": "event"
             }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "views\/template-exhibitions-listing.blade.php"
-            }
         ]
     ],
     "menu_order": 12,
@@ -94,5 +87,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686839337
+    "modified": 1686855179
 }
