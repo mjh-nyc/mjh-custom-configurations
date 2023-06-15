@@ -6,6 +6,7 @@
             "key": "field_592cb5b6cbd44",
             "label": "Your page sub-header",
             "name": "page_subheader",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_645d52a5f150a",
             "label": "Page sub-header display options",
             "name": "page_subheader_display_options",
+            "aria-label": "",
             "type": "radio",
             "instructions": "Note: this option is only applicable to standard pages.",
             "required": 0,
@@ -74,6 +76,13 @@
                 "operator": "==",
                 "value": "event"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "views\/template-exhibitions-listing.blade.php"
+            }
         ]
     ],
     "menu_order": 12,
@@ -85,5 +94,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683837878
+    "modified": 1686839337
 }
