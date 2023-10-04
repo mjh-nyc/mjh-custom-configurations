@@ -3,6 +3,23 @@
     "title": "Event Details",
     "fields": [
         {
+            "key": "field_651da2bc6a665",
+            "label": "Type, Date, Time",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_62170f4a5a841",
             "label": "Event Attendance Type",
             "name": "event_attendance_type",
@@ -228,6 +245,41 @@
             "placeholder": ""
         },
         {
+            "key": "field_651da2df6a666",
+            "label": "Tickets",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_651dac5ec67a5",
+            "label": "Button 1",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
             "key": "field_622b69bad4b0d",
             "label": "Event Pricing Text",
             "name": "event_pricing_text",
@@ -246,138 +298,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_59308d698eaba",
-            "label": "Event pricing",
-            "name": "event_pricing",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_622b69bad4b0d",
-                        "operator": "==empty"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "field_59308da68eabc",
-            "min": 0,
-            "max": 0,
-            "layout": "block",
-            "button_label": "Add price",
-            "sub_fields": [
-                {
-                    "key": "field_59308da68eabc",
-                    "label": "Event price label",
-                    "name": "event_price_label",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "parent_repeater": "field_59308d698eaba"
-                },
-                {
-                    "key": "field_59308d828eabb",
-                    "label": "Event price",
-                    "name": "event_price",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "$",
-                    "append": "",
-                    "min": "",
-                    "max": "",
-                    "step": "",
-                    "parent_repeater": "field_59308d698eaba"
-                },
-                {
-                    "key": "field_5a5cf6628f0b7",
-                    "label": "Event Price Alternate",
-                    "name": "event_price_alternate",
-                    "aria-label": "",
-                    "type": "select",
-                    "instructions": "Alternate event pricing",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "Free": "Free",
-                        "Free, advance reservations recommended": "Free, advance reservations recommended",
-                        "Free, advance reservations required": "Free, advance reservations required",
-                        "Other": "Other"
-                    },
-                    "default_value": false,
-                    "allow_null": 1,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": "",
-                    "parent_repeater": "field_59308d698eaba"
-                },
-                {
-                    "key": "field_5a5cf6ec7b39b",
-                    "label": "Event Price Alternate Other",
-                    "name": "event_price_alternate_other",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Free text option for other alternate pricing",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a5cf6628f0b7",
-                                "operator": "==",
-                                "value": "Other"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "parent_repeater": "field_59308d698eaba"
-                }
-            ],
-            "rows_per_page": 20
         },
         {
             "key": "field_5930965396353",
@@ -415,6 +335,98 @@
             "prepend": "",
             "append": "",
             "maxlength": 25
+        },
+        {
+            "key": "field_651dacbe9c8f5",
+            "label": "Button 2",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_651dacd006ba9",
+            "label": "Event Pricing Text",
+            "name": "event_pricing_text_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Open text to detail pricing",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_651dacdd06baa",
+            "label": "Event ticket URL",
+            "name": "event_ticket_url_2",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "URL for the ticket purchasing application for this event",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_651dacea06bab",
+            "label": "Event ticket button label",
+            "name": "event_ticket_button_label_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter your custom ticket button label",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get Tickets",
+            "maxlength": 25,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_651da33216186",
+            "label": "Additional Details",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_621d1d7768305",
@@ -650,7 +662,7 @@
             "name": "event_museum_membership_callout",
             "aria-label": "",
             "type": "true_false",
-            "instructions": "Check to display the museum membership callout",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -658,7 +670,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
+            "message": "Yes, display the museum membership callout",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -683,5 +695,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686198562
+    "modified": 1696443801
 }
