@@ -60,6 +60,7 @@
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add hero area feature",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_6149fcb3638ad",
@@ -146,8 +147,7 @@
                                     "return_format": "array",
                                     "parent_repeater": "field_6149fdeca443e"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -393,6 +393,7 @@
                             "max": 2,
                             "layout": "row",
                             "button_label": "Add Content Column",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5f3c86bdb4150",
@@ -418,8 +419,7 @@
                                     "prefix_name": 1,
                                     "parent_repeater": "field_5f3c8684b414f"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -470,6 +470,7 @@
                             "max": 0,
                             "layout": "block",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5f3ca2d1ab6fc",
@@ -587,10 +588,10 @@
                                     "min": "",
                                     "max": 1,
                                     "return_format": "id",
-                                    "parent_repeater": "field_5f3c98f226d97"
+                                    "parent_repeater": "field_5f3c98f226d97",
+                                    "bidirectional_target": []
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -602,6 +603,31 @@
                     "label": "Events Section",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_66ba6af188002",
+                            "label": "Events Section Featured Image",
+                            "name": "events_section_featured_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
                         {
                             "key": "field_5f3c161e9b657",
                             "label": "Events Section Title",
@@ -623,12 +649,12 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_59e90a516bc2a",
-                            "label": "Featured events",
-                            "name": "featured_events_repeater",
+                            "key": "field_66ba6a563f8b9",
+                            "label": "Events Section Content",
+                            "name": "events_section_content",
                             "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "Select events you would like to feature on the homepage events section. Note, that events with a defined end date will be automatically removed from the section after their end date.",
+                            "type": "textarea",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -636,38 +662,27 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 6,
-                            "layout": "row",
-                            "button_label": "Add Event",
-                            "sub_fields": [
-                                {
-                                    "key": "field_59e90a516bc2c",
-                                    "label": "Event item",
-                                    "name": "event_item",
-                                    "aria-label": "",
-                                    "type": "post_object",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "post_type": [
-                                        "event"
-                                    ],
-                                    "taxonomy": [],
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "return_format": "id",
-                                    "ui": 1,
-                                    "parent_repeater": "field_59e90a516bc2a"
-                                }
-                            ],
-                            "rows_per_page": 20
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_66ba6b9e6186e",
+                            "label": "Events Section Link",
+                            "name": "events_section_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -714,7 +729,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_5f3eaeeb8e681",
@@ -771,7 +787,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_5f3eaf798e684",
@@ -812,6 +829,7 @@
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5f3eb093e4431",
@@ -830,8 +848,7 @@
                                     "return_format": "array",
                                     "parent_repeater": "field_5f3eb050e4430"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         },
                         {
                             "key": "field_5f47d7060de34",
@@ -848,7 +865,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_5f3e8bb742c61",
@@ -885,7 +903,8 @@
                                 "id": ""
                             },
                             "placement": "top",
-                            "endpoint": 0
+                            "endpoint": 0,
+                            "selected": 0
                         },
                         {
                             "key": "field_5f3e8ecc327cf",
@@ -926,6 +945,7 @@
                             "max": 0,
                             "layout": "table",
                             "button_label": "Add Row",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_5f3e8f83327d2",
@@ -974,8 +994,7 @@
                                     "maxlength": "",
                                     "parent_repeater": "field_5f3e8f41327d0"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -1056,6 +1075,7 @@
                             "max": 0,
                             "layout": "row",
                             "button_label": "Add Item",
+                            "rows_per_page": 20,
                             "sub_fields": [
                                 {
                                     "key": "field_59291e3fa8664",
@@ -1084,7 +1104,8 @@
                                     "multiple": 0,
                                     "return_format": "id",
                                     "ui": 1,
-                                    "parent_repeater": "field_59291deda8663"
+                                    "parent_repeater": "field_59291deda8663",
+                                    "bidirectional_target": []
                                 },
                                 {
                                     "key": "field_592e2b5bb1e00",
@@ -1107,8 +1128,7 @@
                                     "maxlength": "",
                                     "parent_repeater": "field_59291deda8663"
                                 }
-                            ],
-                            "rows_per_page": 20
+                            ]
                         }
                     ],
                     "min": "",
@@ -1148,5 +1168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684605694
+    "modified": 1723493814
 }
