@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_62170f4a5a841",
@@ -61,43 +62,14 @@
             },
             "choices": {
                 "onetime": "One-time event",
-                "ongoing": "Ongoing event (date range)",
-                "recurring": "Recurring event"
+                "ongoing": "Ongoing event (date range)"
             },
+            "default_value": "",
+            "return_format": "value",
             "allow_null": 1,
             "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "",
             "layout": "horizontal",
-            "return_format": "value"
-        },
-        {
-            "key": "field_594c0dbe0f949",
-            "label": "Event recurrence",
-            "name": "event_recurrence",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "Recurring events will be pushed to the top of the listing. For recurring events, date and time entry fields are not available. Please specify the recurrence in the field provided, include complex recurrence rules within the body of the event.",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_594bf676f1376",
-                        "operator": "==",
-                        "value": "recurring"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "save_other_choice": 0
         },
         {
             "key": "field_5930950a5dfdb",
@@ -106,7 +78,7 @@
             "aria-label": "",
             "type": "date_picker",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -139,16 +111,8 @@
             "aria-label": "",
             "type": "date_picker",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_594bf676f1376",
-                        "operator": "==",
-                        "value": "ongoing"
-                    }
-                ]
-            ],
+            "required": 1,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -259,7 +223,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_651dac5ec67a5",
@@ -426,7 +391,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_621d1d7768305",
@@ -695,5 +661,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696443801
+    "modified": 1724690032
 }
