@@ -1,0 +1,23 @@
+{
+    "key": "ui_options_page_66c181847da04",
+    "title": "Event Search Settings",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Event Search Settings",
+    "menu_slug": "event-search-settings",
+    "parent_slug": "edit.php?post_type=event",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": false,
+    "description": "",
+    "menu_icon": [],
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1723957940
+}
