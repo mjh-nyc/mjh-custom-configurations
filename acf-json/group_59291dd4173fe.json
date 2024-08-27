@@ -629,6 +629,32 @@
                             "preview_size": "medium"
                         },
                         {
+                            "key": "field_66cd356b4402b",
+                            "label": "Events Section Featured Image Position",
+                            "name": "events_section_featured_image_position",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Please select where you would like to position the Image on the callout",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left Align",
+                                "right": "Right Align"
+                            },
+                            "default_value": "left",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_5f3c161e9b657",
                             "label": "Events Section Title",
                             "name": "events_section_title",
@@ -1168,5 +1194,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1723493814
+    "modified": 1724724758
 }
