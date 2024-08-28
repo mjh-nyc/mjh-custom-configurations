@@ -6,6 +6,7 @@
             "key": "field_592f0e41fd49f",
             "label": "Museum Opening Hours",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,12 +17,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_592edb004f30d",
             "label": "Regular hours",
             "name": "regular_hours_repeater",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "Manage museum’s opening hours. Please enter exceptions to regular day schedule as their own days. Be sure to place the exception days <strong>above<\/strong> the regular day schedule. It will be pulled out into an alert message window on the hours page. Use the shortcode <strong>[hours]<\/strong> within your pages and posts to display these hours.",
             "required": 0,
@@ -41,6 +44,7 @@
                     "key": "field_592edce24f30e",
                     "label": "Day",
                     "name": "day_of_week",
+                    "aria-label": "",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
@@ -65,12 +69,14 @@
                     "ui": 0,
                     "ajax": 0,
                     "return_format": "value",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_592edb004f30d"
                 },
                 {
                     "key": "field_592ee34d4f311",
                     "label": "Museum is closed",
                     "name": "is_museum_closed",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -84,12 +90,14 @@
                     "default_value": 0,
                     "ui": 0,
                     "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ui_off_text": "",
+                    "parent_repeater": "field_592edb004f30d"
                 },
                 {
                     "key": "field_592ee2e64f30f",
                     "label": "Opening hour",
                     "name": "opening_hour",
+                    "aria-label": "",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -108,12 +116,14 @@
                         "id": ""
                     },
                     "display_format": "g:i A",
-                    "return_format": "g:i A"
+                    "return_format": "g:i A",
+                    "parent_repeater": "field_592edb004f30d"
                 },
                 {
                     "key": "field_592ee32e4f310",
                     "label": "Closing hour",
                     "name": "closing_hour",
+                    "aria-label": "",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -132,12 +142,14 @@
                         "id": ""
                     },
                     "display_format": "g:i A",
-                    "return_format": "g:i A"
+                    "return_format": "g:i A",
+                    "parent_repeater": "field_592edb004f30d"
                 },
                 {
                     "key": "field_592ee4a3c5707",
                     "label": "Hours variation start date",
                     "name": "hours_start_date_range",
+                    "aria-label": "",
                     "type": "date_picker",
                     "instructions": "If hours for this day vary during a specific period, please add a start date for this variation",
                     "required": 0,
@@ -149,12 +161,14 @@
                     },
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
-                    "first_day": 0
+                    "first_day": 0,
+                    "parent_repeater": "field_592edb004f30d"
                 },
                 {
                     "key": "field_592eeccdc5708",
                     "label": "Hours variation end date",
                     "name": "hours_end_date_range",
+                    "aria-label": "",
                     "type": "date_picker",
                     "instructions": "If hours for this day vary during a specific period, please add an end date for this variation",
                     "required": 0,
@@ -166,14 +180,17 @@
                     },
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
-                    "first_day": 1
+                    "first_day": 1,
+                    "parent_repeater": "field_592edb004f30d"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_592ef3af8f165",
             "label": "Regular hours additional notes",
             "name": "regular_hours_additional_notes",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "Add any additional notes about regular hours. Use shortcode <strong>[hours-notes]<\/strong> to display these notes within you pages and posts.",
             "required": 0,
@@ -193,6 +210,7 @@
             "key": "field_592ef0d5f2450",
             "label": "Holiday hours",
             "name": "holiday_hours_repeater",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "Manage holiday schedule. Use the shortcode <strong>[holidays]<\/strong> within your pages and posts to display these hours.",
             "required": 0,
@@ -212,6 +230,7 @@
                     "key": "field_592ef111f2451",
                     "label": "Holiday name",
                     "name": "holiday_name",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -225,12 +244,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_592ef0d5f2450"
                 },
                 {
                     "key": "field_592ef126f2452",
                     "label": "Holiday date",
                     "name": "holiday_date",
+                    "aria-label": "",
                     "type": "date_picker",
                     "instructions": "",
                     "required": 0,
@@ -242,12 +263,14 @@
                     },
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
-                    "first_day": 1
+                    "first_day": 1,
+                    "parent_repeater": "field_592ef0d5f2450"
                 },
                 {
                     "key": "field_592ef158f2453",
                     "label": "Is museum closed?",
                     "name": "is_museum_closed",
+                    "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
@@ -261,12 +284,14 @@
                     "default_value": 0,
                     "ui": 0,
                     "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ui_off_text": "",
+                    "parent_repeater": "field_592ef0d5f2450"
                 },
                 {
                     "key": "field_592ef18ff2454",
                     "label": "Opening hour",
                     "name": "opening_hour",
+                    "aria-label": "",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -285,12 +310,14 @@
                         "id": ""
                     },
                     "display_format": "g:i A",
-                    "return_format": "g:i A"
+                    "return_format": "g:i A",
+                    "parent_repeater": "field_592ef0d5f2450"
                 },
                 {
                     "key": "field_592ef1b1f2455",
                     "label": "Closing hour",
                     "name": "closing_hour",
+                    "aria-label": "",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -309,46 +336,17 @@
                         "id": ""
                     },
                     "display_format": "g:i A",
-                    "return_format": "g:i A"
+                    "return_format": "g:i A",
+                    "parent_repeater": "field_592ef0d5f2450"
                 }
-            ]
-        },
-        {
-            "key": "field_593011b2f8e36",
-            "label": "Holiday eve opening hour",
-            "name": "holiday_eve_opening_hour",
-            "type": "time_picker",
-            "instructions": "Please choose the opening hour on the eve of a holiday",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "g:i A",
-            "return_format": "g:i A"
-        },
-        {
-            "key": "field_59301207f8e37",
-            "label": "Holiday eve closing hour",
-            "name": "holiday_eve_closing_hour",
-            "type": "time_picker",
-            "instructions": "Please choose the closing hour on the eve of a holiday",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "g:i A",
-            "return_format": "g:i A"
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_592ef74010bf3",
             "label": "Holiday additional notes",
             "name": "holiday_additional_notes",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "Add any additional notes about holiday hours. Use shortcode <strong>[holiday-notes]<\/strong> to display these notes within you pages and posts.",
             "required": 0,
@@ -368,6 +366,7 @@
             "key": "field_592f0db3f1c73",
             "label": "Contact Information",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -378,12 +377,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5938696a32d71",
             "label": "Contact information notes",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -401,6 +402,7 @@
             "key": "field_592f0a52483bc",
             "label": "Street address",
             "name": "street_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -420,6 +422,7 @@
             "key": "field_592f0c3460e7c",
             "label": "Secondary street",
             "name": "secondary_street_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -439,6 +442,7 @@
             "key": "field_592f0ac8483bd",
             "label": "City",
             "name": "city_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -458,6 +462,7 @@
             "key": "field_592f0b9e60e7a",
             "label": "State",
             "name": "state_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -477,6 +482,7 @@
             "key": "field_592f0bbc60e7b",
             "label": "Zip code",
             "name": "zip_code_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -496,6 +502,7 @@
             "key": "field_592f0cf489b86",
             "label": "Phone number",
             "name": "phone_number",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -515,6 +522,7 @@
             "key": "field_592f0e9751018",
             "label": "Announcements",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -525,12 +533,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_592f0a16a61e8",
             "label": "Announcements Top Bar",
             "name": "annoucements",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "Manages the announcement pop out messaging on the site",
             "required": 0,
@@ -550,6 +560,7 @@
             "key": "field_621870a4fa851",
             "label": "Museum Membership Callout",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -560,12 +571,14 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_62187f8dfa852",
             "label": "Museum Membership Callout Title",
             "name": "museum_membership_callout_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -585,6 +598,7 @@
             "key": "field_62187fa3fa853",
             "label": "Museum Membership Callout Text",
             "name": "museum_membership_callout_text",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -604,6 +618,7 @@
             "key": "field_62187fbdfa854",
             "label": "Museum Membership Callout Link",
             "name": "museum_membership_callout_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -620,6 +635,7 @@
             "key": "field_62187fd3fa855",
             "label": "Museum Membership Callout Link Label",
             "name": "museum_membership_callout_link_label",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -654,5 +670,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645772806
+    "modified": 1724819903
 }
