@@ -62,12 +62,13 @@
             },
             "choices": {
                 "onetime": "One-time event",
-                "ongoing": "Ongoing event (date range)"
+                "ongoing": "Multi-day event"
             },
             "default_value": "",
             "return_format": "value",
             "allow_null": 1,
             "other_choice": 0,
+            "allow_in_bindings": 1,
             "layout": "horizontal",
             "save_other_choice": 0
         },
@@ -661,5 +662,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724690032
+    "modified": 1725032618
 }
