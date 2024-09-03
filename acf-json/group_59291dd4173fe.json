@@ -160,6 +160,33 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_66ce297c44e9e",
+                            "label": "Special feature image position",
+                            "name": "special_feature_image_position",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Select the left or right position of the special feature image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "right": "Right"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 1,
+                            "allow_in_bindings": 1,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_5e70ee85a7ce0",
                             "label": "Special feature image",
                             "name": "special_feature_image",
@@ -183,32 +210,6 @@
                             "max_size": "",
                             "mime_types": ".png,.gif,.jpg,.jpeg",
                             "preview_size": "thumbnail"
-                        },
-                        {
-                            "key": "field_66ce297c44e9e",
-                            "label": "Special feature image position",
-                            "name": "special_feature_image_position",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "Select the left or right position of the special feature image",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "left": "Left",
-                                "right": "Right"
-                            },
-                            "default_value": false,
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 1,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": ""
                         },
                         {
                             "key": "field_63dac10839b13",
@@ -311,7 +312,7 @@
                         },
                         {
                             "key": "field_63dac2d21c1a1",
-                            "label": "Special feature background color",
+                            "label": "Background color",
                             "name": "special_feature_background_color",
                             "aria-label": "",
                             "type": "color_picker",
@@ -319,17 +320,18 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "20",
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "#FFFFFF",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "allow_in_bindings": 1
                         },
                         {
                             "key": "field_63dac4951c1a3",
-                            "label": "Special feature text color",
+                            "label": "Text color",
                             "name": "special_feature_text_color",
                             "aria-label": "",
                             "type": "color_picker",
@@ -337,17 +339,18 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "20",
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "#4A4A4A",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "allow_in_bindings": 1
                         },
                         {
                             "key": "field_66ce4fa5f5c46",
-                            "label": "Special feature button link color",
+                            "label": "Button color",
                             "name": "special_feature_button_link_color",
                             "aria-label": "",
                             "type": "color_picker",
@@ -355,13 +358,33 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "24",
+                                "width": "20",
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "#222222",
                             "enable_opacity": 0,
-                            "return_format": "string"
+                            "return_format": "string",
+                            "allow_in_bindings": 1
+                        },
+                        {
+                            "key": "field_66d7735249dbc",
+                            "label": "Button label color",
+                            "name": "special_feature_button_label_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF",
+                            "enable_opacity": 0,
+                            "return_format": "string",
+                            "allow_in_bindings": 1
                         },
                         {
                             "key": "field_63dac53d0c65b",
@@ -373,7 +396,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "20",
                                 "class": "",
                                 "id": ""
                             },
@@ -385,6 +408,7 @@
                             "return_format": "value",
                             "allow_null": 1,
                             "other_choice": 0,
+                            "allow_in_bindings": 1,
                             "layout": "vertical",
                             "save_other_choice": 0
                         }
@@ -1238,5 +1262,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1725393667
+    "modified": 1725395901
 }
