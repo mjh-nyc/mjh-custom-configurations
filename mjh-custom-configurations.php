@@ -335,7 +335,280 @@ add_action( 'rest_api_init', function () {
         ),
         'permission_callback' => '__return_true',
     ));
+
+    register_rest_route( 'wp/v2', 'upcoming_events', array(
+        'methods'             => 'GET',
+        'callback'            => 'mjh_get_upcoming_events',
+        'args'                => array(
+            'event_category' => array(
+                'description'       => 'Optional event category filter. Accepts a term ID, slug, or comma-separated list.',
+                'sanitize_callback' => 'mjh_sanitize_event_category_filter',
+            ),
+            'per_page' => array(
+                'description'       => 'Optional number of events to return.',
+                'default'           => 9,
+                'sanitize_callback' => function ( $value ) {
+                    $value = absint( $value );
+
+                    if ( empty( $value ) ) {
+                        return 9;
+                    }
+
+                    return min( $value, 100 );
+                },
+                'validate_callback' => function ( $param ) {
+                    return is_numeric( $param ) && (int) $param > 0;
+                },
+            ),
+        ),
+        'permission_callback' => '__return_true',
+    ));
 } );
+
+/**
+ * Sanitize the optional event category filter passed to the endpoint.
+ *
+ * @param mixed $value Raw query parameter value.
+ * @return array
+ */
+function mjh_sanitize_event_category_filter( $value ) {
+    if ( empty( $value ) ) {
+        return array();
+    }
+
+    if ( is_string( $value ) ) {
+        $value = explode( ',', $value );
+    }
+
+    if ( ! is_array( $value ) ) {
+        $value = array( $value );
+    }
+
+    $terms = array();
+
+    foreach ( $value as $term ) {
+        if ( is_numeric( $term ) ) {
+            $terms[] = (int) $term;
+            continue;
+        }
+
+        $term = sanitize_title( wp_unslash( $term ) );
+
+        if ( '' !== $term ) {
+            $terms[] = $term;
+        }
+    }
+
+    return array_values( array_unique( array_filter( $terms ) ) );
+}
+
+/**
+ * Return upcoming events for the custom REST endpoint.
+ *
+ * @param WP_REST_Request $request REST request object.
+ * @return WP_REST_Response
+ */
+function mjh_get_upcoming_events( WP_REST_Request $request ) {
+    $query_args = array(
+        'post_type'      => 'event',
+        'post_status'    => 'publish',
+        'posts_per_page' => (int) $request->get_param( 'per_page' ),
+        'meta_query'     => array(
+            'relation'         => 'AND',
+            'event_start_date' => array(
+                'key'     => 'event_start_date',
+                'type'    => 'DATETIME',
+                'compare' => 'EXISTS',
+            ),
+            'event_start_time' => array(
+                'key'     => 'event_start_time',
+                'type'    => 'NUMERIC',
+                'compare' => 'EXISTS',
+            ),
+            'event_end_date'   => array(
+                'key'     => 'event_end_date',
+                'value'   => date( 'Y-m-d H:i:s', strtotime( 'yesterday 11:59' ) ),
+                'type'    => 'DATETIME',
+                'compare' => '>',
+            ),
+        ),
+        'orderby'        => array(
+            'event_start_date' => 'ASC',
+            'event_start_time' => 'ASC',
+        ),
+    );
+
+    $event_category = $request->get_param( 'event_category' );
+    if ( ! empty( $event_category ) ) {
+        $query_args['tax_query'] = array(
+            array(
+                'taxonomy' => 'event_category',
+                'field'    => mjh_is_all_numeric_terms( $event_category ) ? 'term_id' : 'slug',
+                'terms'    => $event_category,
+                'operator' => 'IN',
+            ),
+        );
+    }
+
+    $events = new WP_Query( $query_args );
+    $payload = array();
+
+    foreach ( $events->posts as $event ) {
+        $payload[] = mjh_format_upcoming_event_response( $event );
+    }
+
+    return rest_ensure_response( $payload );
+}
+
+/**
+ * Determine whether every taxonomy term value is numeric.
+ *
+ * @param array $terms Sanitized taxonomy term values.
+ * @return bool
+ */
+function mjh_is_all_numeric_terms( array $terms ) {
+    foreach ( $terms as $term ) {
+        if ( ! is_int( $term ) ) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+/**
+ * Map an event post into the API response shape.
+ *
+ * @param WP_Post $event Event post object.
+ * @return array
+ */
+function mjh_format_upcoming_event_response( WP_Post $event ) {
+    $attendance_types = get_field( 'event_attendance_type', $event->ID );
+    $attendance_values = array();
+
+    if ( is_array( $attendance_types ) ) {
+        foreach ( $attendance_types as $attendance_type ) {
+            if ( is_array( $attendance_type ) && ! empty( $attendance_type['value'] ) ) {
+                $attendance_values[] = $attendance_type['value'];
+            } elseif ( is_string( $attendance_type ) && '' !== $attendance_type ) {
+                $attendance_values[] = $attendance_type;
+            }
+        }
+    }
+
+    $attendance_values = array_values( array_unique( $attendance_values ) );
+
+    return array(
+        'title'             => get_the_title( $event ),
+        'start_datetime'    => mjh_get_event_start_datetime_iso( $event->ID ),
+        'event_url'         => get_permalink( $event ),
+        'is_virtual'        => in_array( 'virtual', $attendance_values, true ),
+        'is_in_person'      => in_array( 'in-person', $attendance_values, true ),
+        'short_description' => mjh_truncate_description( get_the_excerpt( $event ), 50 ),
+    );
+}
+
+/**
+ * Convert the ACF event start date and time into an ISO 8601 timestamp.
+ *
+ * @param int $post_id Event post ID.
+ * @return string|null
+ */
+function mjh_get_event_start_datetime_iso( $post_id ) {
+    $event_start_date = get_field( 'event_start_date', $post_id );
+    $event_start_time = get_field( 'event_start_time', $post_id );
+
+    if ( empty( $event_start_date ) ) {
+        return null;
+    }
+
+    $timezone = mjh_get_event_timezone( get_field( 'event_timezone', $post_id ) );
+    $formats = array();
+
+    if ( ! empty( $event_start_time ) ) {
+        $formats = array(
+            'F j, Y g:i A',
+            'Y-m-d H:i:s g:i A',
+            'Ymd g:i A',
+        );
+    } else {
+        $formats = array(
+            'F j, Y',
+            'Y-m-d H:i:s',
+            'Ymd',
+        );
+    }
+
+    $date_string = trim( $event_start_date . ' ' . $event_start_time );
+
+    foreach ( $formats as $format ) {
+        $date = DateTimeImmutable::createFromFormat( $format, $date_string, $timezone );
+
+        if ( false !== $date ) {
+            return $date->format( DATE_ATOM );
+        }
+    }
+
+    $timestamp = strtotime( $date_string );
+
+    if ( false === $timestamp ) {
+        return null;
+    }
+
+    return ( new DateTimeImmutable( '@' . $timestamp ) )
+        ->setTimezone( $timezone )
+        ->format( DATE_ATOM );
+}
+
+/**
+ * Map the stored event timezone code to a PHP timezone object.
+ *
+ * @param string $timezone_code ACF timezone code.
+ * @return DateTimeZone
+ */
+function mjh_get_event_timezone( $timezone_code ) {
+    $timezones = array(
+        'ET' => 'America/New_York',
+        'CT' => 'America/Chicago',
+        'MT' => 'America/Denver',
+        'PT' => 'America/Los_Angeles',
+    );
+
+    if ( ! empty( $timezone_code ) && isset( $timezones[ $timezone_code ] ) ) {
+        return new DateTimeZone( $timezones[ $timezone_code ] );
+    }
+
+    return wp_timezone();
+}
+
+/**
+ * Trim a text string to a character limit for API responses.
+ *
+ * @param string $text Text to trim.
+ * @param int    $limit Maximum character count before ellipsis.
+ * @return string
+ */
+function mjh_truncate_description( $text, $limit = 50 ) {
+    $text = trim( preg_replace( '/\s+/', ' ', wp_strip_all_tags( (string) $text ) ) );
+
+    if ( '' === $text ) {
+        return '';
+    }
+
+    if ( strlen( $text ) <= $limit ) {
+        return $text;
+    }
+
+    $truncated = substr( $text, 0, $limit );
+    $space_pos = strrpos( $truncated, ' ' );
+
+    if ( false !== $space_pos ) {
+        $truncated = substr( $truncated, 0, $space_pos );
+    }
+
+    return rtrim( $truncated, " \t\n\r\0\x0B.,;:" ) . '...';
+}
+
 // Callback function for the custom rest api endpoint
 function mjh_generate_navigation($request) {
     $paramHash = array();
