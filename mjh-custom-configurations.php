@@ -502,6 +502,7 @@ function mjh_format_upcoming_event_response( WP_Post $event ) {
         'title'             => get_the_title( $event ),
         'start_datetime'    => mjh_get_event_start_datetime_iso( $event->ID ),
         'event_url'         => get_permalink( $event ),
+        'event_ticket_url'  => get_field( 'event_ticket_url',$event->ID  ),
         'is_virtual'        => in_array( 'virtual', $attendance_values, true ),
         'is_in_person'      => in_array( 'in-person', $attendance_values, true ),
         'short_description' => mjh_truncate_description( get_the_excerpt( $event ), 50 ),
