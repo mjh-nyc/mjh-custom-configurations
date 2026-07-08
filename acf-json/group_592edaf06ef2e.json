@@ -39,6 +39,7 @@
             "max": 0,
             "layout": "block",
             "button_label": "Add day schedule",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_592edce24f30e",
@@ -70,7 +71,9 @@
                     "ajax": 0,
                     "return_format": "value",
                     "placeholder": "",
-                    "parent_repeater": "field_592edb004f30d"
+                    "parent_repeater": "field_592edb004f30d",
+                    "create_options": 0,
+                    "save_options": 0
                 },
                 {
                     "key": "field_592ee34d4f311",
@@ -162,7 +165,8 @@
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
                     "first_day": 0,
-                    "parent_repeater": "field_592edb004f30d"
+                    "parent_repeater": "field_592edb004f30d",
+                    "default_to_current_date": 0
                 },
                 {
                     "key": "field_592eeccdc5708",
@@ -181,10 +185,10 @@
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
                     "first_day": 1,
-                    "parent_repeater": "field_592edb004f30d"
+                    "parent_repeater": "field_592edb004f30d",
+                    "default_to_current_date": 0
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_592ef3af8f165",
@@ -225,6 +229,7 @@
             "max": 0,
             "layout": "block",
             "button_label": "Add holiday",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_592ef111f2451",
@@ -264,7 +269,8 @@
                     "display_format": "F j, Y",
                     "return_format": "F j, Y",
                     "first_day": 1,
-                    "parent_repeater": "field_592ef0d5f2450"
+                    "parent_repeater": "field_592ef0d5f2450",
+                    "default_to_current_date": 0
                 },
                 {
                     "key": "field_592ef158f2453",
@@ -339,8 +345,7 @@
                     "return_format": "g:i A",
                     "parent_repeater": "field_592ef0d5f2450"
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
             "key": "field_592ef74010bf3",
@@ -557,6 +562,83 @@
             "delay": 0
         },
         {
+            "key": "field_6a4ecec210a41",
+            "label": "Announcement Schedule",
+            "name": "annoucements_schedule_bool",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Schedule announcement to be shown only during a specific date\/time window.",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6a4ecd7f10a3f",
+            "label": "Start date\/time",
+            "name": "annoucements_start_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a4ecec210a41",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1,
+            "default_to_current_date": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_6a4ece5010a40",
+            "label": "End date\/time",
+            "name": "annoucements_end_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a4ecec210a41",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1,
+            "default_to_current_date": 0,
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_621870a4fa851",
             "label": "Museum Membership Callout",
             "name": "",
@@ -670,5 +752,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724819903
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1783549860
 }
